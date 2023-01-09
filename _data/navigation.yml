@@ -1,12 +1,23 @@
-- title: Start
+- title: HOME
   url: "/"
   side: left
 
-- title: Getting Started
-  url: "/getting-started/"
+- title: PEOPLE
+#  url: "/people/"
   side: left
+  dropdown:
+  - title: "Professor"
+    url: "/professor/"
+  - title: "Ph.D"
+    url: "/phd/"
+  - title: "Master"
+    url: "/master/"
+  - title: "Undergraduate"
+    url: "/undergraduate/"
+  - title: "Alumni"
+    url: "/alumni/"
 
-- title: "Templates"
+- title: "RESEARCH"
   url: "/design/"
   side: left
   dropdown:
@@ -31,7 +42,7 @@
   - title: "Portfolio"
     url: "/design/portfolio/"
 
-- title: "Header Styles"
+- title: "PROJECT"
   url: "/headers/"
   side: left
   dropdown:
@@ -50,21 +61,27 @@
   - title: "No Header but Image"
     url: "/design/no-header-but-image/"
 
-- title: Documentation
-  url: "/documentation/"
+- title: PUBLICATION
+  url: "/publication/"
   side: left
   dropdown:
-  - title: "Changelog"
-    url: "/changelog/"
-  - title: "Roadmap"
-    url: "/roadmap/"
+  - title: "Journal"
+    url: "/journal/"
+  - title: "Conference"
+    url: "/conference/"
+  - title: "Patent"
+    url: "/patent"
 
-- title: Blog
+- title: AWARD
   url: "/blog/"
   side: left
   dropdown:
   - title: "Blog Archive"
     url: "/blog/archive/"
+
+- title: "GALLERY"
+  url: "/gallery/"
+  side: left
 
 - title: "Search"
   url: "/search/"

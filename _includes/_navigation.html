@@ -26,7 +26,12 @@
 {% endcomment %}
       <ul class="left">
         {% for link in site.data.navigation %}
-
+            {% if link.url == nil %}
+              {% assign only_dropdown = true %}
+              {% assign domain = site.url %}
+              {% assign _baseurl = site.baseurl %}
+            {% else %}
+              {% assign only_dropdown = false %}
               {% if link.url contains 'http' %}
                 {% assign domain = '' %}
                 {% assign _baseurl = '' %}
@@ -37,6 +42,7 @@
                 {% assign domain = site.url %}
                 {% assign _baseurl = site.baseurl %}
               {% endif %}
+            {% endif %}
 
           {% comment %}   If there are links for left side begin   {% endcomment %}
           {% if link.side == 'left' %}
@@ -48,25 +54,43 @@
 
             {% comment %}   If left side WITH dropdown menu do   {% endcomment %}
             {% else %}
+              {% if only_dropdown == true %}
+                <li class="has-dropdown{% if link.url == page.url %} active{% endif %}">
+                  <a {% if link.class %}class="{{link.class}}"{% endif %}>{{ link.title | escape }}</a>
 
-              <li class="has-dropdown{% if link.url == page.url %} active{% endif %}">
-                <a {% if link.class %}class="{{link.class}}"{% endif %} href="{{ domain }}{{ _baseurl }}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{{ link.title | escape }}</a>
+                    <ul class="dropdown">
+                      {% for dropdown_link in link.dropdown %}
 
-                  <ul class="dropdown">
-                    {% for dropdown_link in link.dropdown %}
+                        {% if dropdown_link.url contains 'http' %}
+                          {% assign domain = '' %}
+                          {% else %}
+                          {% assign domain = site.url %}
+                        {% endif %}
 
-                      {% if dropdown_link.url contains 'http' %}
-                        {% assign domain = '' %}
-                        {% else %}
-                        {% assign domain = site.url %}
-                      {% endif %}
+                        <li><a {% if dropdown_link.class %}class="{{dropdown_link.class}}"{% endif %} href="{{domain}}{{_baseurl}}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title | escape }}</a></li>
+                      {% endfor %}
+                    </ul>
+                </li>
+                <li class="divider"></li>
+              {% else %}  
+                <li class="has-dropdown{% if link.url == page.url %} active{% endif %}">
+                  <a {% if link.class %}class="{{link.class}}"{% endif %} href="{{ domain }}{{ _baseurl }}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{{ link.title | escape }}</a>
 
-                      <li><a {% if dropdown_link.class %}class="{{dropdown_link.class}}"{% endif %} href="{{ domain }}{{ _baseurl }}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title | escape }}</a></li>
-                    {% endfor %}
-                  </ul>
+                    <ul class="dropdown">
+                      {% for dropdown_link in link.dropdown %}
 
-              </li>
-              <li class="divider"></li>
+                        {% if dropdown_link.url contains 'http' %}
+                          {% assign domain = '' %}
+                          {% else %}
+                          {% assign domain = site.url %}
+                        {% endif %}
+
+                        <li><a {% if dropdown_link.class %}class="{{dropdown_link.class}}"{% endif %} href="{{ domain }}{{ _baseurl }}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title | escape }}</a></li>
+                      {% endfor %}
+                    </ul>
+                </li>
+                <li class="divider"></li>
+              {% endif %}
             {% endif %}
           {% endif %}
         {% endfor %}
