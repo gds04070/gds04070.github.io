@@ -5,7 +5,12 @@
         {% assign split_url = url | split: '.' %}
         {% capture thumb_url %}{{split_url[0]}}-thumb.{{split_url[1]}}{% endcapture %}
         <li>
-            
+            <img {% if item.caption %}data-caption="{{ item.caption }}"{% endif %} 
+            src="{{ site.urlimg }}{{ thumb_url }}" alt="{{ item.caption }}">
+            {{item.title}}
+            {% if item.content %}
+            {{item.content}}
+            {% endif %}
         </li>
         {% endfor %}
     </ul>
