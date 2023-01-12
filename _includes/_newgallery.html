@@ -1,0 +1,12 @@
+<div>
+    <ul class="small-block-grid-1 medium-block-grid-2">
+        {% for item in page.gallery %}
+        {% capture url %}{{ item.image_url }}{% endcapture %}
+        {% assign split_url = url | split: '.' %}
+        {% capture thumb_url %}{{split_url[0]}}-thumb.{{split_url[1]}}{% endcapture %}
+        <li>
+            
+        </li>
+        {% endfor %}
+    </ul>
+</div>

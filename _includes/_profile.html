@@ -1,13 +1,19 @@
 <div>
-    <img src="" alt="">
-    <p>
-        <ul>
-            <li>Name: </li>
-            {% if enucation != nil %}
-            <li>Education: </li>
+    <ul class="small-block-grid-1 medium-block-grid-2" data-clearing>
+        {% for item in page.profile %}
+        {% capture url %}{{ item.image_url }}{% endcapture %}
+        {% assign split_url = url | split: '.' %}
+        {% capture thumb_url %}{{split_url[0]}}-thumb.{{split_url[1]}}{% endcapture %}
+        <li>
+            <img {% if item.caption %}data-caption="{{ item.caption }}"{% endif %} 
+            src="{{ site.urlimg }}{{ thumb_url }}" alt="{{ item.caption }}">
+            Name: {{item.name}}
+            Research: {{item.research}}
+            Contact: {{item.email}}
+            {% if item.education %}
+            Education: {{item.education}}
             {% endif %}
-            <li>Research: </li>
-            <li>Contact: </li>
-        </ul>
-    </p>
+        </li>
+        {% endfor %}
+    </ul>
 </div>

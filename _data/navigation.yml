@@ -43,7 +43,7 @@
     url: "/design/portfolio/"
 
 - title: "PROJECT"
-  url: "/headers/"
+  url: "/project/"
   side: left
   dropdown:
   - title: "Header with Full-Width-Image"
@@ -73,11 +73,8 @@
     url: "/patent"
 
 - title: AWARD
-  url: "/blog/"
+  url: "/award/"
   side: left
-  dropdown:
-  - title: "Blog Archive"
-    url: "/blog/archive/"
 
 - title: "GALLERY"
   url: "/gallery/"
