@@ -6,7 +6,7 @@ permalink: "/professor/"
 ---
 <div class="row">
     <div class="medium-4 columns t30">
-    <img src="{{site.profileimg}}profile_prof_choi.jpg" alt="">
+    <img src="{{site.urlimg}}profile_prof_choi.jpg" alt="">
     </div>
     <div class="medium-8 columns">
     Kae Won Choi received the B.S. degree in Civil, Urban, and Geosystem Engineering in 2001, and the M.S. and Ph.D. degrees in Electrical Engineering and Computer Science in 2003 and 2007, respectively, all from Seoul National University, Seoul, Korea. From 2008 to 2009, he was with Telecommunication Business of Samsung Electronics Co., Ltd., Korea. From 2009 to 2010, he was a postdoctoral researcher in the Department of Electrical and Computer Engineering, University of Manitoba, Winnipeg, MB, Canada. From 2010 to 2016, he was an assistant professor in the Department of Computer Science and Engineering, Seoul National University of Science and Technology, Korea. In 2016, he joined the faculty at Sungkyunkwan University, Korea, where he is currently an associate professor in the College of Information and Communication Engineering. His research interests include RF energy transfer, visible light communication, device-to-device communication, cognitive radio, radio resource management. He has served as an editor of IEEE Communications Surveys and Tutorials from 2014, an editor of IEEE Wireless Communications Letters from 2015, an editor of IEEE Transactions on Wireless Communications from 2017.

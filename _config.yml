@@ -39,6 +39,7 @@ improve_content: https://github.com/gds04070/_includes/_improve_content.html
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
 urlimg: 'https://gds04070.github.io/images/'
+profileimg: 'https://gds04070.github.io/images/profile/'
 
 
 # Logo size is 600x80 pixels
