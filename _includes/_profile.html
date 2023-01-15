@@ -1,17 +1,18 @@
 <div>
-    <ul class="small-block-grid-1 medium-block-grid-2" data-clearing>
+    <ul class="small-block-grid-1 medium-block-grid-2 b30" data-clearing>
         {% for item in page.profile %}
-        {% capture url %}{{ item.image_url }}{% endcapture %}
-        {% assign split_url = url | split: '.' %}
-        {% capture thumb_url %}{{split_url[0]}}-thumb.{{split_url[1]}}{% endcapture %}
         <li>
-            <img {% if item.caption %}data-caption="{{ item.caption }}"{% endif %} 
-            src="{{ site.urlimg }}{{ thumb_url }}" alt="{{ item.caption }}">
-            Name: {{item.name}}
-            Research: {{item.research}}
-            Contact: {{item.email}}
+            <img
+            src="{{ site.profileimg }}{{ item.image_url }}" alt="{{ item.name }}" width="60%">
+            <div>
+                <b>Name:</b> {{item.name}}</div>
+            <div>
+                <b>Research:</b> {{item.research}}</div>
+            <div>
+                <b>Contact:</b> {{item.email}}</div>
             {% if item.education %}
-            Education: {{item.education}}
+            <div>
+                <b>Education:</b> {{item.education}}</div>
             {% endif %}
         </li>
         {% endfor %}
