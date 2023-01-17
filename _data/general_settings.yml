@@ -12,7 +12,7 @@ light_logo_2x: "/assets/images/logo-light@2x.png"
 
 address_01: '경기도 수원시 장안구 천천동 서부로 2066 제1공학관 23226'
 phone_number: "+82) 31-290-7693"
-copyright_text: "© 2021 CIOT. All rights reserved."
+copyright_text: "© 2023 CIOT. All rights reserved."
 
 google_analytics:
   enable: false
