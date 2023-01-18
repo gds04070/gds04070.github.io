@@ -313,6 +313,9 @@ main_menu:
       - text: "test"
         url: "/people"
 
+      - text: "gallery_test"
+        url: "/gallery"
+
       - text: "Blog 01"
         url: "/blogs/index"
 

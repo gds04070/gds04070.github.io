@@ -57,6 +57,15 @@ portfolios_area:
                 <img src="{{portfolio.image}}" alt="{{portfolio.title}}"/>
               </figure>
               <div class="post-content">
+                <div class="category text-center">
+                  <div class="flex-row">
+                      {% for filter in portfolio.filters %}
+                      <div class="badge badge-pill {% if filter == 'phd' %}bg-red{% elsif filter=='master'%}bg-orange{% elsif filter=='underg' %}bg-yellow{% else %}bg-meander{% endif %} mr-2">
+                          {{filter}}
+                      </div>
+                      {% endfor %}
+                  </div>
+              </div>
                 <h2 class="post-title mb-10">{{portfolio.title}}</h2>
                 <div class="mb-2">{{portfolio.research}}</div>
                 <div class="mb-0"><i class="jam jam-envelope-f mr-2"></i>{{portfolio.email}}</div>

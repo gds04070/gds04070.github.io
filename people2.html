@@ -1,0 +1,87 @@
+---
+layout: page
+title: "People"
+black_menu: true
+header_style: 'one'
+custom_font: font4
+portfolios_area:
+  enable: true
+  categories:
+   - title: "Phd"
+     filter: "phd"
+
+   - title: "Master"
+     filter: "master"
+
+   - title: "Undergraduate"
+     filter: "underg"
+
+   - title: "Alumni"
+     filter: "alumni"
+  
+  portfolios:
+   - title: "Minh Tran Nguyen"
+     research: "Energy Harvesting, WPT, Antenna Design, Microwave Circuit, Metasurface"
+     image: "/assets/images/art/profile/profile_phd_nmtran.jpg"
+     email: "minhtran.uet@gmail.com"
+     filters:
+      - phd
+   - title: "장용규(Yong kyu Jang)"
+     research: "Wireless Communication"
+     image: "/assets/images/art/profile/profile_alumni_jangyongkyu.jpg"
+     email: "fedor303@g.skku.edu"
+     education: "Undergraduate"
+     filters:
+      - alumni
+---
+
+
+{% for category in page.portfolios_area.categories %}
+<h1 class="text-center mt-40">{{category.title}}</h1>
+<div class="wrapper light-wrapper">
+    <div class="container inner">
+        <div class="row text-center">
+            {% for portfolio in page.portfolios_area.portfolios %}
+            <div class="col-md-4">
+                <figure class="img-blob blob1 mb-25">
+                    <img src="{{portfolio.image}}" style="width: 15rem" alt=""/>
+                </figure>
+                <h4 class="mb-15">{{portfolio.title}}</h4>
+                <div class="mb-2">{{portfolio.research}}</div>
+                <div class="mb-0"><i class="jam jam-envelope-f mr-2"></i>{{portfolio.email}}</div>
+                {% if portfolio.education %}
+                <div class="mb-0"><b>Education : </b>{{portfolio.education}}</div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% for category in page.portfolios_area.categories %}
+<h1 class="text-center mt-40">{{category.title}}</h1>
+<div class="wrapper gray-wrapper">
+    <div class="container inner">
+        <div class="grid-view boxed">
+        <div class="row text-center">
+            {% for portfolio in page.portfolios_area.portfolios %}
+            <div class="col-md-6 col-lg-3">
+                <div class="box bg-white shadow">
+                <figure class="img-blob blob1 mb-25">
+                    <img src="{{portfolio.image}}" style="width: 15rem" alt=""/>
+                </figure>
+                <h4 class="mb-15">{{portfolio.title}}</h4>
+                <div class="mb-2">{{portfolio.research}}</div>
+                <div class="mb-0"><i class="jam jam-envelope-f mr-2"></i>{{portfolio.email}}</div>
+                {% if portfolio.education %}
+                <div class="mb-0"><b>Education : </b>{{portfolio.education}}</div>
+                {% endif %}
+            </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+</div>
+{% endfor %}
