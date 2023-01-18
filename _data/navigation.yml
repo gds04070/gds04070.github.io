@@ -310,6 +310,9 @@ main_menu:
   - text: "PUBLICATION"
     url: "/"
     submenu:
+      - text: "test"
+        url: "/people"
+
       - text: "Blog 01"
         url: "/blogs/index"
 

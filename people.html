@@ -1,0 +1,80 @@
+---
+layout: page
+title: "People"
+black_menu: true
+header_style: 'one'
+custom_font: font4
+portfolios_area:
+  enable: true
+  categories:
+   - title: "Phd"
+     filter: "phd"
+
+   - title: "Master"
+     filter: "master"
+
+   - title: "Undergraduate"
+     filter: "underg"
+
+   - title: "Alumni"
+     filter: "alumni"
+  
+  portfolios:
+   - title: "Minh Tran Nguyen"
+     research: "Energy Harvesting, WPT, Antenna Design, Microwave Circuit, Metasurface"
+     image: "/assets/images/art/profile/profile_phd_nmtran.jpg"
+     email: "minhtran.uet@gmail.com"
+     filters:
+      - phd
+   - title: "장용규(Yong kyu Jang)"
+     research: "Wireless Communication"
+     image: "/assets/images/art/profile/profile_alumni_jangyongkyu.jpg"
+     email: "fedor303@g.skku.edu"
+     education: "Undergraduate"
+     filters:
+      - alumni
+---
+<h1 class="text-center">Professor</h1>
+<h1 class="text-center mt-40">Member</h1>
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="grid grid-view boxed">
+      <div class="isotope-filter text-center">
+        <ul>
+          <li><a class="button active" data-filter="*">All</a></li>
+          {% for category in page.portfolios_area.categories %}
+           <li><a class="button" data-filter=".{{category.filter}}">{{category.title}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <div class="tiles light-gallery-wrapper">
+        <div class="row isotope">
+          {% for portfolio in  page.portfolios_area.portfolios %}
+          <div class="item grid-sizer col-md-6 col-lg-4 {% for filter in portfolio.filters %} {{filter}} {% endfor %}">
+            <div class="box bg-white shadow p-30">
+              <figure class="main rounded mb-30">
+                <img src="{{portfolio.image}}" alt="{{portfolio.title}}"/>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10">{{portfolio.title}}</h2>
+                <div class="mb-2">{{portfolio.research}}</div>
+                <div class="mb-0"><i class="jam jam-envelope-f mr-2"></i>{{portfolio.email}}</div>
+                {% if portfolio.education %}
+                <div class="mb-0"><b>Education : </b>{{portfolio.education}}</div>
+                {% endif %}
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          {% endfor %}
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.tiles -->
+    </div>
+    <!-- /.grid -->
+  </div>
+</div>
