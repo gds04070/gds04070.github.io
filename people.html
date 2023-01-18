@@ -14,7 +14,7 @@ portfolios_area:
      filter: "master"
 
    - title: "Undergraduate"
-     filter: "underg"
+     filter: "undergraduate"
 
    - title: "Alumni"
      filter: "alumni"
@@ -121,37 +121,37 @@ portfolios_area:
      image: "/assets/images/art/profile/profile_undergraduate_parkjiyong.jpg"
      email: "qkr1020@skku.edu"     
      filters:
-      - underg
+      - undergraduate
    - title: "윤준희(Jun Hui Yoon)"
      research: "Wireless Communication"
      image: "/assets/images/art/profile/profile_undergraduate_yoonjunhui.jpg"
      email: "yjh990209@g.skku.edu"     
      filters:
-      - underg
+      - undergraduate
    - title: "김근호(Geun Ho Kim)"
      research: "Wireless Communication"
      image: "/assets/images/art/profile/profile_undergraduate_kimkeunho.jpg"
      email: "kgh30312@g.skku.edu"     
      filters:
-      - underg
+      - undergraduate
    - title: "박수영(Su Young Park)"
      research: "Wireless Communication"
      image: "/assets/images/art/profile/profile_undergraduate_parksuyoung.jpg"
      email: "suyoung6918@gmail.com"     
      filters:
-      - underg
+      - undergraduate
    - title: "장혁(Hyeok Jang)"
      research: "Wireless Communication"
      image: "/assets/images/art/profile/profile_undergraduate_janghyeok.jpg"
      email: "hjanghyeok@naver.com"     
      filters:
-      - underg
+      - undergraduate
    - title: "조준희(Jun Hee Jo)"
      research: "Bio Signal Acquisition and Processing"
      image: "/assets/images/art/profile/profile_undergraduate_jojunhee.jpg"
      email: "jhcho9811@naver.com"     
      filters:
-      - underg
+      - undergraduate
    - title: "장용규(Yong kyu Jang)"
      research: "Wireless Communication"
      image: "/assets/images/art/profile/profile_alumni_jangyongkyu.jpg"
@@ -371,17 +371,17 @@ portfolios_area:
       <div class="clearfix"></div>
       <div class="tiles light-gallery-wrapper">
         <div class="row isotope">
-          {% for portfolio in  page.portfolios_area.portfolios %}
-          <div class="item grid-sizer col-md-6 col-lg-4 {% for filter in portfolio.filters %} {{filter}} {% endfor %}">
-            <div class="box bg-white shadow p-30">
+          {% for portfolio in page.portfolios_area.portfolios %}
+          <div class="item grid-sizer col-md-6 col-lg-3 {% for filter in portfolio.filters %} {{filter}} {% endfor %}">
+            <div class="box bg-white shadow p-30" style="height:34rem">
               <figure class="main rounded mb-30">
-                <img src="{{portfolio.image}}" alt="{{portfolio.title}}"/>
+                <img src="{{portfolio.image}}" style="height:16rem;" alt="{{portfolio.title}}"/>
               </figure>
               <div class="post-content">
                 <div class="category text-center">
                   <div class="flex-row">
                       {% for filter in portfolio.filters %}
-                      <div class="badge badge-pill {% if filter == 'phd' %}bg-red{% elsif filter=='master'%}bg-orange{% elsif filter=='underg' %}bg-yellow{% else %}bg-meander{% endif %} mr-2">
+                      <div class="badge badge-pill {% if filter == 'phd' %}bg-red{% elsif filter=='master'%}bg-orange{% elsif filter=='undergraduate' %}bg-yellow{% else %}bg-meander{% endif %} mr-2">
                           {{filter}}
                       </div>
                       {% endfor %}
