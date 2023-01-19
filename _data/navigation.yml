@@ -1,6 +1,6 @@
 main_menu:
 
-  - text: "Home"
+  - text: "HOME"
     url: "/"
     menu_type: "megamenu"
     submenu:
@@ -92,68 +92,33 @@ main_menu:
     has_submenu: "true"
     
     label_two:
-      - sub_menu_text: "Services"
+      - sub_menu_text: "tests"
         sub_menu:
-          - text: "Service 01"
-            url: "/services/index"
+          - text: "People 1"
+            url: "/people"
 
-          - text: "Service 02"
-            url: "/services/index-2"
+          - text: "People 2"
+            url: "/people2"
 
-          - text: "Service 03"
-            url: "/services/index-3"
+          - text: "People 3"
+            url: "/people3"
 
-          - text: "Service 04"
-            url: "/services/index-4"
-
-          - text: "Service 05"
-            url: "/services/index-5"
+          - text: "People 4"
+            url: "/people4"
  
-      - sub_menu_text: "About Us"
-        sub_menu:
-          - text: "About 01"
-            url: "/about/about"
-
-          - text: "About 02"
-            url: "/about/about-2"
-
-          - text: "About 03"
-            url: "/about/about-3"
-
-          - text: "About 04"
-            url: "/about/about-4"
-      
-      - sub_menu_text: "Shop"
-        sub_menu:
-          - text: "Shop 01"
-            url: "/shop/index"
-
-          - text: "Shop 02"
-            url: "/shop/index-2"
-
-      - sub_menu_text: "Contact"
-        sub_menu:
-          - text: "Contact 01"
-            url: "/contact/contact-1"
-
-          - text: "Contact 02"
-            url: "/contact/contact-2"
-
-          - text: "Contact 03"
-            url: "/contact/contact-3"
-
-          - text: "Contact 04"
-            url: "/contact/contact-4"
     submenu:
 
-      - text: "FAQ"
-        url: "/faq"
+      - text: "PhD"
+        url: "/people4#Phd"
 
-      - text: "Page Loading "
-        url: "/loading"
+      - text: "Master"
+        url: "/people4#Master"
 
-      - text: "Page Scrolling"
-        url: "/scroll"
+      - text: "Undergraduate"
+        url: "/people4#Undergraduate"
+      
+      - text: "Alumni"
+        url: "/people4#Alumni"
 
   - text: "RESEARCH"
     url: "/"
@@ -310,8 +275,20 @@ main_menu:
   - text: "PUBLICATION"
     url: "/"
     submenu:
-      - text: "test"
+      - text: "professor"
+        url: "/professor"
+
+      - text: "people_test"
         url: "/people"
+
+      - text: "people_test2"
+        url: "/people2"
+
+      - text: "people_test3"
+        url: "/people3"
+
+      - text: "people_test4"
+        url: "/people4"
 
       - text: "gallery_test"
         url: "/gallery"
@@ -341,7 +318,7 @@ main_menu:
         url: "/blogs/index-8"
 
   - text: "GALLERY"
-    url: "/"
+    url: "/gallery"
     has_menu: false
   
   - text: "CONTACT"

@@ -4,7 +4,8 @@ title: "People"
 black_menu: true
 header_style: 'one'
 custom_font: font4
-row_num: 3
+row_num: 1
+# 1 | 2
 image_boundary: "rounded"
 # blob | rounded
 members_info:
@@ -301,41 +302,52 @@ members_info:
         education: "Master"
 
 ---
-{% if page.row_num == 2 %}
-{% assign col_num = 6 %}
-{% assign image_ratio_num = 8 %}
-{% elsif page.row_num == 3 %}
-{% assign col_num = 4 %}
-{% assign image_ratio_num = 7 %}
-{% else %}
-{% assign col_num = 3 %}
+{% if page.row_num == 1 %}
 {% assign image_ratio_num = 6 %}
+{% else %}
+{% assign image_ratio_num = 3 %}
 {% endif %}
 
 {% assign wrapper_switch = true %}
+{% assign left = true %}
 
-<!-- 세로 정렬 카드X  -->
 {% for category in page.members_info.categories %}
+<section id="{{category.title}}">
 <div class="wrapper {% if wrapper_switch %}light-wrapper{% else %}wrapper bg-opacity-default{% endif %}">
     <div class="container inner">
-        <h1 class="text-center mt-40" data-aos="fade-up" style="font-size:2rem">{{category.title}}</h1>
-        <div class="row text-center" >
+        <h1 class="text-center mt-40" data-aos="fade-up" style="font-size:2.4rem">{{category.title}}</h1>
+        <div class="space40"></div>
+        <div class="row mt-60">
             {% for member in category.members %}
-            <div class="col-md-{{col_num}} mt-60" data-aos="fade-up" data-aos-delay="300">
-                <figure class="mb-20 {% if page.image_boundary == 'blob' %}img-blob blob1{% else %}rounded{% endif %}">
-                    <img src="{{member.image}}" style="width:{{image_ratio_num | times: 2}}rem; height:{{image_ratio_num | times: 3}}rem; object-fit: cover;" alt=""/>
-                </figure>
-                <h4 class="mb-15 mt-10">{{member.name}}</h4>
-                {% if member.education %}
-                <div class="mb-2"><b>Education : </b>
-                  <div class="badge badge-pill {% if member.education == 'Ph.D' %}bg-red{% elsif member.education=='Master'%}bg-orange{% elsif member.education=='Undergraduate' %}bg-yellow{% endif %} mr-2">
-                  {{member.education}}
-                  </div>
-                </div>
+            <div class="space60"></div>
+            <div class="{% if page.row_num == 1 %}col-md-12{% else %}col-md-6{% endif %} mb-40">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 {% if left==false %}order-md-2{% endif %}" {% if left==false %}style="text-align:end;"{% endif %} data-aos="fade-up" data-aos-delay="200">
+                        <figure class="mb-10 {% if page.image_boundary == 'blob' %}img-blob blob1{% else %}rounded{% endif %}">
+                            <img src="{{member.image}}" style="width:{{image_ratio_num | times: 2}}rem; height:{{image_ratio_num | times: 3}}rem; object-fit:cover;" alt=""/>
+                        </figure>
+                    </div>
+                    <div class="col-md-9 col-sm-12 {% if left==false %}order-md-1{% endif %}" {% if left==false %}style="text-align:end;"{% endif %} data-aos="fade-up" data-aos-delay="400">
+                        <h4 class="mb-15 mt-10" style="font-size: 1.6rem">{{member.name}}</h4>
+                        {% if member.education %}
+                        <div class="mb-2" style="font-size: 1rem"><b>Education : </b>
+                            <div class="badge badge-pill {% if member.education == 'Ph.D' %}bg-red{% elsif member.education=='Master'%}bg-orange{% elsif member.education=='Undergraduate' %}bg-yellow{% endif %} mr-2">
+                            {{member.education}}
+                            </div>
+                        </div>
+                        {% endif %}
+                        <div class="mb-2 mt-2" style="font-size: 1rem">{{member.research}}</div>
+                        <div class="mb-0" style="font-size: 1rem"><i class="jam jam-envelope-f mr-2"></i>{{member.email}}</div>
+                    </div>
+
+                {% if left == true and page.row_num == 1 %}
+                {% assign left = false %}
+                {% else %}
+                {% assign left = true %}
                 {% endif %}
-                <div class="mb-2">{{member.research}}</div>
-                <div class="mb-0"><i class="jam jam-envelope-f mr-2"></i>{{member.email}}</div>
+
                 
+                </div>
             </div>
             {% endfor %}
         </div>
@@ -346,4 +358,5 @@ members_info:
 {% else %}
 {% assign wrapper_switch = true %}
 {% endif %}
+</section>
 {% endfor %}

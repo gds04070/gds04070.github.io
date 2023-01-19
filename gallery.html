@@ -197,9 +197,9 @@ portfolios_area:
                             <div class="row">
                                 {% for image in portfolio.images %}
                                 {% if forloop.length == 1 %}
-                                <div class="">
-                                    <figure class="rounded">
-                                        <img src="{{image.img}}" alt="{{portfolio.title}}">
+                                <div class="col-md-6 col-lg-12" >
+                                    <figure class="rounded text-center">
+                                        <img src="{{image.img}}" style="width: fit-content;" alt="{{portfolio.title}}">
                                     </figure>
                                 </div>
                                 {% elsif forloop.length < 3 %}

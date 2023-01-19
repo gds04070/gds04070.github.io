@@ -5,7 +5,7 @@ black_menu: true
 header_style: 'one'
 custom_font: font4
 row_num: 3
-image_boundary: "rounded"
+image_boundary: "blob"
 # blob | rounded
 members_info:
   categories:
@@ -314,31 +314,29 @@ members_info:
 
 {% assign wrapper_switch = true %}
 
-<!-- 세로 정렬 카드X  -->
 {% for category in page.members_info.categories %}
 <div class="wrapper {% if wrapper_switch %}light-wrapper{% else %}wrapper bg-opacity-default{% endif %}">
     <div class="container inner">
         <h1 class="text-center mt-40" data-aos="fade-up" style="font-size:2rem">{{category.title}}</h1>
+        <div class="grid-view boxed">
         <div class="row text-center" >
             {% for member in category.members %}
-            <div class="col-md-{{col_num}} mt-60" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-md-{{col_num}} mt-60" data-aos="fade-up" data-aos-delay="300" >
+                <div class="box bg-white shadow">
                 <figure class="mb-20 {% if page.image_boundary == 'blob' %}img-blob blob1{% else %}rounded{% endif %}">
                     <img src="{{member.image}}" style="width:{{image_ratio_num | times: 2}}rem; height:{{image_ratio_num | times: 3}}rem; object-fit: cover;" alt=""/>
                 </figure>
                 <h4 class="mb-15 mt-10">{{member.name}}</h4>
                 {% if member.education %}
-                <div class="mb-2"><b>Education : </b>
-                  <div class="badge badge-pill {% if member.education == 'Ph.D' %}bg-red{% elsif member.education=='Master'%}bg-orange{% elsif member.education=='Undergraduate' %}bg-yellow{% endif %} mr-2">
-                  {{member.education}}
-                  </div>
-                </div>
+                <div class="mb-2"><b>Education : </b>{{member.education}}</div>
                 {% endif %}
                 <div class="mb-2">{{member.research}}</div>
                 <div class="mb-0"><i class="jam jam-envelope-f mr-2"></i>{{member.email}}</div>
-                
+              </div>
             </div>
             {% endfor %}
         </div>
+      </div>
     </div>
 </div>
 {% if wrapper_switch == true %}
