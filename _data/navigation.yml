@@ -287,8 +287,8 @@ main_menu:
       # - text: "people_test3"
       #   url: "/people3"
 
-      # - text: "people_test4"
-      #   url: "/people4"
+      - text: "people_test4"
+        url: "/people4"
 
       - text: "gallery_test"
         url: "/gallery"
