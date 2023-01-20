@@ -103,22 +103,22 @@ main_menu:
           # - text: "People 3"
           #   url: "/people3"
 
-          # - text: "People 4"
-          #   url: "/people4"
+          - text: "People 4"
+            url: "/people4"
  
-    # submenu:
+    submenu:
 
-    #   - text: "PhD"
-    #     url: "/people4#Phd"
+      - text: "PhD"
+        url: "/people4#Phd"
 
-    #   - text: "Master"
-    #     url: "/people4#Master"
+      - text: "Master"
+        url: "/people4#Master"
 
-    #   - text: "Undergraduate"
-    #     url: "/people4#Undergraduate"
+      - text: "Undergraduate"
+        url: "/people4#Undergraduate"
       
-    #   - text: "Alumni"
-    #     url: "/people4#Alumni"
+      - text: "Alumni"
+        url: "/people4#Alumni"
 
   - text: "RESEARCH"
     url: "/"
