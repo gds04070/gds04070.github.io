@@ -100,8 +100,8 @@ main_menu:
           - text: "People 2"
             url: "/people2"
 
-          # - text: "People 3"
-          #   url: "/people3"
+          - text: "People 3"
+            url: "/people3"
 
           - text: "People 4"
             url: "/people4"
