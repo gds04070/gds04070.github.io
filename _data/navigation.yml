@@ -97,28 +97,28 @@ main_menu:
           - text: "People 1"
             url: "/people"
 
-          - text: "People 2"
-            url: "/people2"
+          # - text: "People 2"
+          #   url: "/people2"
 
-          - text: "People 3"
-            url: "/people3"
+          # - text: "People 3"
+          #   url: "/people3"
 
-          - text: "People 4"
-            url: "/people4"
+          # - text: "People 4"
+          #   url: "/people4"
  
-    submenu:
+    # submenu:
 
-      - text: "PhD"
-        url: "/people4#Phd"
+    #   - text: "PhD"
+    #     url: "/people4#Phd"
 
-      - text: "Master"
-        url: "/people4#Master"
+    #   - text: "Master"
+    #     url: "/people4#Master"
 
-      - text: "Undergraduate"
-        url: "/people4#Undergraduate"
+    #   - text: "Undergraduate"
+    #     url: "/people4#Undergraduate"
       
-      - text: "Alumni"
-        url: "/people4#Alumni"
+    #   - text: "Alumni"
+    #     url: "/people4#Alumni"
 
   - text: "RESEARCH"
     url: "/"
@@ -281,14 +281,14 @@ main_menu:
       - text: "people_test"
         url: "/people"
 
-      - text: "people_test2"
-        url: "/people2"
+      # - text: "people_test2"
+      #   url: "/people2"
 
-      - text: "people_test3"
-        url: "/people3"
+      # - text: "people_test3"
+      #   url: "/people3"
 
-      - text: "people_test4"
-        url: "/people4"
+      # - text: "people_test4"
+      #   url: "/people4"
 
       - text: "gallery_test"
         url: "/gallery"
