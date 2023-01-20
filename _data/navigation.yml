@@ -97,8 +97,8 @@ main_menu:
           - text: "People 1"
             url: "/people"
 
-          # - text: "People 2"
-          #   url: "/people2"
+          - text: "People 2"
+            url: "/people2"
 
           # - text: "People 3"
           #   url: "/people3"
