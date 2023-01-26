@@ -136,10 +136,10 @@ main_menu:
     url: "/project"
     submenu:
       - text: "Current Project"
-        url: "/project/#current"
+        url: "/project#current"
 
       - text: "Past Project"
-        url: "/project/#past"
+        url: "/project#past"
 
   - text: "PUBLICATION"
     url: "/journal"
