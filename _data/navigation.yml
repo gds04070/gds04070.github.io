@@ -107,6 +107,8 @@ main_menu:
             url: "/people4"
  
     submenu:
+      - text: "Prof"
+        url: "/professor"
 
       - text: "PhD"
         url: "/people4#Phd"
@@ -121,129 +123,14 @@ main_menu:
         url: "/people4#Alumni"
 
   - text: "RESEARCH"
-    url: "/"
-    menu_type: "megamenu"
+    url: "/research"
+    menu_type: "dropdown"
     submenu:
-
-      - text: "Accordion"
-        url: "/elements/accordion"
-
-      - text: "Dividers"
-        url: "/elements/dividers"
-
-      - text: "Lightbox"
-        url: "/elements/lightbox"
-
-      - text: "Tabs"
-        url: "/elements/tabs"
-
-      - text: "Alerts"
-        url: "/elements/alerts"
-
-      - text: "Dropcap"
-        url: "/elements/dropcap"
-
-      - text: "Lists"
-        url: "/elements/lists"
-
-      - text: "Team"
-        url: "/elements/team"
-
-      - text: "Animated Text"
-        url: "/elements/animated_text"
-
-      - text: "Forms"
-        url: "/elements/forms"
-
-      - text: "Media Player"
-        url: "/elements/media_player"
-
-      - text: "Testimonials"
-        url: "/elements/testimonials"
-
-      - text: "Blockquote"
-        url: "/elements/blockquote"
-
-      - text: "Buttons & Badges"
-        url: "/elements/buttons_badges"
-
-      - text: "Call to Action"
-        url: "/elements/call_to_action"
-
-      - text: "Carousel"
-        url: "/elements/carousel"
-
-      - text: "Clients"
-        url: "/elements/clients"
-
-      - text: "Countdown"
-        url: "/elements/countdown"
-
-      - text: "Counter"
-        url: "/elements/counter"
-
-      - text: "Icons - Concept"
-        url: "/elements/icons_concept"
-
-      - text: "Icons - Jam"
-        url: "/elements/icons_jam"
-
-      - text: "Icons - Icofont"
-        url: "/elements/icons_icofont"
-
-      - text: "Icons - Lineal"
-        url: "/elements/icons_lineal"
-
-      - text: "Icon Box"
-        url: "/elements/icon_box"
-
-      - text: "Image Hover"
-        url: "/elements/image_hover"
-
-      - text: "Image Mask"
-        url: "/elements/icons_image_mask"
-
-      - text: "Modal"
-        url: "/elements/modal"
-
-      - text: "Pricing Tables"
-        url: "/elements/pricing"
-
-      - text: "Process Steps"
-        url: "/elements/process_steps"
-
-      - text: "Progress Bar"
-        url: "/elements/progress_bar"
-
-      - text: "Scroll Animations"
-        url: "/elements/scroll_animations"
-
-      - text: "Social Icons"
-        url: "/elements/social_icons"
-
-      - text: "Tables"
-        url: "/elements/tables"
-
-      - text: "Titles"
-        url: "/elements/titles"
-
-      - text: "Toggle"
-        url: "/elements/toggle"
-
-      - text: "Tooltip & Popover"
-        url: "/elements/tooltip_popover"
-
-      - text: "Typography"
-        url: "/elements/typography"
-
-      - text: "Video Popup"
-        url: "/elements/video_popup"
-
-      - text: "Waves"
-        url: "/elements/waves"
-
-      - text: "Wrappers"
-        url: "/elements/wrappers"
+      - text: "Research Area"
+        url: "/research"
+      - text: "Testbed Video"
+        url: "/video"
+      
 
   - text: "PROJECT"
     url: "/portfolios/"
@@ -277,21 +164,6 @@ main_menu:
     submenu:
       - text: "professor"
         url: "/professor"
-
-      - text: "people_test"
-        url: "/people"
-
-      # - text: "people_test2"
-      #   url: "/people2"
-
-      # - text: "people_test3"
-      #   url: "/people3"
-
-      - text: "people_test4"
-        url: "/people4"
-
-      - text: "gallery_test"
-        url: "/gallery"
 
       - text: "Blog 01"
         url: "/blogs/index"

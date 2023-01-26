@@ -4,4 +4,194 @@ title: "Research Area"
 black_menu: true
 header_style: 'one'
 custom_font: font4
+research_area:
+  - title: "A study on mmWave communications based on reconfigurable metasurface"
+    main_images: 
+     - img: "/assets/images/art/research/research_mmWave_communications1.jpg"
+    sub_images:
+     - img: "/assets/images/art/research/research_mmWave_communications2.jpg"
+     - img: "/assets/images/art/research/research_mmWave_communications3.jpg"
+    videos:
+     - link: "Ls53PUzJDsA"
+    overview: 
+     - p: "In this research project, we aim to develop a mmWave communications system based on reconfigurable metasurface. By adopting reconfigurable metasurface technology to ultra high frequency range communication technology, we can overcome inevitable limitations caused by using high frequency electromagnetic wave such as tremendous amount of path loss and shaded area due to the high straight forwardness characteristic."
+    challenge: 
+     - p: "To this end, we study the channel estimation, beamforming and precoding techniques for reconfigurable metasurface with the theoritical analysis of overall system. Moreover, we also research the direct modulation technology of metasurface for massive multi user holographic communication. The proposed communication system and reconfigurable metasurface will be tested on a prototype testbed to verify the practical applicability of the developed techniques."
+    process: 
+     - p: "To this end, we study the channel estimation, beamforming and precoding techniques for reconfigurable metasurface with the theoritical analysis of overall system. Moreover, we also research the direct modulation technology of metasurface for massive multi user holographic communication. The proposed communication system and reconfigurable metasurface will be tested on a prototype testbed to verify the practical applicability of the developed techniques."
+  - title: "Energy Maintenance Wireless Power Camera System"
+    main_images:
+     - img: "/assets/images/art/research/research_wireless_power_camera_system.jpg"
+    overview: 
+     - p: "The Research proposes a system in which a wireless power camera that operates by being wirelessly powered and actively maintains energy. The power management includes not only transmission power control in the power transmission apparatus as the transmitting end but also control in the wireless power camera operating unit as the receiving end. For such control, the power transmitter and the wireless power camera operator may exchange control information through a transceiver. "
+     - p: "The wireless power camera operating unit measures the remaining energy of the energy storage connected to the wireless power camera operating unit. When the residual energy is below a certain level, power is requested to the power transmitter through the transceiver. The power transmitter determines beamforming based on the position of the wireless power camera operating unit according to the request. The wireless power camera operating unit transmits photographing and data as motion is detected, and can actively request energy from the power transmitter based on the remaining energy. An object of the present research is to implement a fully wireless camera that can maintain the camera without replacing the battery in a place difficult to access through this."
+    videos:
+     - link: "Ls53PUzJDsA"
+     - link: "bqNJ8--wzLE"
+  - title: "Multi-Antenna based Long-Range Wireless Power Transfer System with Reconfigurable Metasurface Reflector"
+    main_images:
+     - img: "/assets/images/art/research/research_Reconfigurable_Metasurface_Reflector1.jpg"
+     - img: "/assets/images/art/research/research_Reconfigurable_Metasurface_Reflector2.jpg"
+    overview: 
+     - p: "The whole system is made up of phased array antenna transmitter, RF-DC convert circuits receiver and 1-bit coding metasurface reflector. To tackle its low power transfer efficiency between transmitter and receiver, which is the foremost obstacle of radio frequency (RF) based WPT, we have implemented high-efficiency microwave beam synthesizing with multiple antennas. Inevitable shaded area due to the various kinds of obstacles between transmitter and receiver has been solved by deploying reconfigurable metasurface near the shaded area. In the case that transmitter detects obstacle in the middle, energy beam from the transmitter would be steered to metasurface and then by converting the phase of incident electro-magnetic waves of each cell in metasurface, transmitted power can be focused to receiver as well. With proposed convergent power transfer algorithm that handles all hardware components at the same time, optimized power transfer efficiency can be achieved regardless of whether the obstacle detected or not."
+    challenge: 
+     - p: "The whole system is made up of phased array antenna transmitter, RF-DC convert circuits receiver and 1-bit coding metasurface reflector. To tackle its low power transfer efficiency between transmitter and receiver, which is the foremost obstacle of radio frequency (RF) based WPT, we have implemented high-efficiency microwave beam synthesizing with multiple antennas. Inevitable shaded area due to the various kinds of obstacles between transmitter and receiver has been solved by deploying reconfigurable metasurface near the shaded area. In the case that transmitter detects obstacle in the middle, energy beam from the transmitter would be steered to metasurface and then by converting the phase of incident electro-magnetic waves of each cell in metasurface, transmitted power can be focused to receiver as well. With proposed convergent power transfer algorithm that handles all hardware components at the same time, optimized power transfer efficiency can be achieved regardless of whether the obstacle detected or not."
 ---
+<div class="space80"></div>
+<div class="wrapper image-wrapper bg-image" data-image-src="{{relative_url}}/assets/images/art/bg1.jpg">
+    <div class="container inner">
+        <div class="row">
+            {% for research in page.research_area %}
+            <div class="col-md-12">
+                <div class="box bg-white shadow">
+                    <div class="row" style="vertical-align:middle;">
+                        <div class="col-md-11 mb-0">
+                            <h4><a href="#{{research.title}}">{{research.title}}</a></h4>
+                        </div>
+                        <div class="col-md-1 text-center mt-0" >
+                            <i style="font-size:1.6rem;" class="color-default jam jam-arrow-right"></i>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            {% if forloop.index != forloop.length %}
+            <div class="space20"></div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% assign wrapper_switch = true %}
+
+{% for research in page.research_area %}
+<section id="{{research.title}}">
+<div class="wrapper {% if wrapper_switch %}light-wrapper{% else %}wrapper bg-opacity-default{% endif %}">
+    <div class="container inner">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-1">{{research.title}}</h1>
+            </div>
+        </div>
+        <div class="space80"></div>
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+                <h1 class="display-2 color-purple">Overview</h1>
+            </div>
+            <div class="col-md-9 col-sm-12 mt-2 color-dark" style="font-size:1.2rem; line-height: 1.8rem;">
+                {% for paragraph in research.overview %}
+                <p>
+                    {{paragraph.p}}
+                </p>
+                {% endfor %}
+            </div>
+        </div>
+        {% if research.main_images %}
+        <div class="space80"></div>
+        <div class="space20"></div>
+        <div class="row">
+        {% for image in research.main_images %}
+            {% if forloop.length == 1 %}
+            <div class="col-md-12 col-lg-12">
+                <figure class="rounded text-center cover shadow">
+                    <img src="{{image.img}}" alt="">
+                </figure>
+            </div>
+            {% elsif forloop.length == 2 %}
+            <div class="col-md-12 col-lg-6">
+                <figure class="rounded text-center cover shadow">
+                    <img src="{{image.img}}" alt="">
+                </figure>
+            </div>
+            {% else %}
+            <div class="col-md-4">
+                <figure class="rounded text-center cover shadow">
+                    <img src="{{image.img}}" alt="">
+                </figure>
+            </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+        {% endif %}
+        {% if research.challenge %}
+        <div class="space80"></div>
+        <div class="space20"></div>
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+                <h1 class="display-2 color-purple">Challenge</h1>
+            </div>
+            <div class="col-md-9 col-sm-12 mt-2 color-dark" style="font-size:1.2rem; line-height: 1.8rem;">
+                {% for paragraph in research.challenge %}
+                <p>
+                    {{paragraph.p}}
+                </p>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        {% if research.sub_images %}
+        <div class="space80"></div>
+        <div class="space20"></div>
+        <div class="row">
+        {% for image in research.sub_images %}
+            {% if forloop.length == 1 %}
+            <div class="col-md-12 col-lg-12">
+                <figure class="rounded text-center cover shadow">
+                    <img src="{{image.img}}" alt="">
+                </figure>
+            </div>
+            {% elsif forloop.length == 2 %}
+            <div class="col-md-12 col-lg-6">
+                <figure class="rounded text-center shadow cover">
+                    <img src="{{image.img}}" alt="">
+                </figure>
+            </div>
+            {% else %}
+            <div class="col-md-4">
+                <figure class="rounded text-center shadow cover">
+                    <img src="{{image.img}}" alt="">
+                </figure>
+            </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+        {% endif %}
+        {% if research.process %}
+        <div class="space80"></div>
+        <div class="space20"></div>
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+                <h1 class="display-2 color-purple">Process</h1>
+            </div>
+            <div class="col-md-9 col-sm-12 mt-2 color-dark" style="font-size:1.2rem; line-height: 1.8rem;">
+                {% for paragraph in research.process %}
+                <p>
+                    {{paragraph.p}}
+                </p>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        {% if research.videos %}
+        <div class="row">
+            <div class="space80"></div>
+            <div class="space20"></div>
+        {% for video in research.videos %}
+            <div class="col-md-12 col-lg-12">
+                <div class="shadow" style="width:100%; padding-bottom:56.25%;">
+                    <iframe style="width:100%; height:100%; position: absolute;" src="https://www.youtube.com/embed/{{video.link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>                
+            </div>
+            <div class="space40"></div>
+        {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% if wrapper_switch == true %}
+{% assign wrapper_switch = false %}
+{% else %}
+{% assign wrapper_switch = true %}
+{% endif %}
+</section>
+{% endfor %}
