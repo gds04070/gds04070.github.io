@@ -87,7 +87,7 @@ main_menu:
         url: "/index-27"
 
   - text: "PEOPLE"
-    url: "/"
+    url: "/professor"
     menu_type: "dropdown"
     has_submenu: "true"
     
@@ -133,61 +133,25 @@ main_menu:
       
 
   - text: "PROJECT"
-    url: "/portfolios/"
+    url: "/project"
     submenu:
-      - text: "Portfolio 01"
-        url: "/portfolios/index"
+      - text: "Current Project"
+        url: "/project/#current"
 
-      - text: "Portfolio 02"
-        url: "/portfolios/index-2"
-
-      - text: "Portfolio 03"
-        url: "/portfolios/index-3"
-
-      - text: "Portfolio 04"
-        url: "/portfolios/index-4"
-
-      - text: "Portfolio 05"
-        url: "/portfolios/index-5"
-
-      - text: "Portfolio 06"
-        url: "/portfolios/index-6"
-
-      - text: "Portfolio 07"
-        url: "/portfolios/index-7"
-      
-      - text: "Portfolio 08"
-        url: "/portfolios/index-8"
+      - text: "Past Project"
+        url: "/project/#past"
 
   - text: "PUBLICATION"
-    url: "/"
+    url: "/journal"
     submenu:
-      - text: "professor"
-        url: "/professor"
+      - text: "Journal"
+        url: "/journal"
 
-      - text: "Blog 01"
-        url: "/blogs/index"
+      - text: "Conference"
+        url: "/conference"
 
-      - text: "Blog 02"
-        url: "/blogs/index-2"
-
-      - text: "Blog 03"
-        url: "/blogs/index-3"
-
-      - text: "Blog 04"
-        url: "/blogs/index-4"
-
-      - text: "Blog 05"
-        url: "/blogs/index-5"
-
-      - text: "Blog 06"
-        url: "/blogs/index-6"
-
-      - text: "Blog 07"
-        url: "/blogs/index-7"
-
-      - text: "Blog 08"
-        url: "/blogs/index-8"
+      - text: "Patent"
+        url: "/patent"
 
   - text: "GALLERY"
     url: "/gallery"

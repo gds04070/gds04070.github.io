@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Project"
+black_menu: true
+header_style: 'one'
+custom_font: font4
+current_project:
+  - title: "Development of Baseband Ultra Density Network Hardware-in-the-Loop(HIL) Emulator"
+    institution: "ETRI"
+    years: "Mar.2020 - Nov.2020"
+  - title: "Study on Frequency Sharing Algorithm based on Radio Wave Circumstances"
+    institution: "ETRI"
+    years: "Mar.2020 - Nov.2020"
+
+past_project:
+  - title: "A Study on Terminal Networking Platform Technology"
+    institution: "ETRI"
+    years: "Sept.2013 - Jan.2014"
+  - title: "A Study on the Adaptive and Distributed Access to Spectrum Holes in Cognitive Radio System"
+    institution: "SeoulTech"
+    years: "Dec.2010 - Nov.2011"
+  - title: "A Study on the Application of Cognitive Radio Technologies to Femtocell Networks"
+    institution: "National Research Foundation of Korea"
+    years: "May.2011 - Apr.2014"
+---
+<div class="space40"></div>
+<section id="current">
+<div class="wrapper gray-wrapper">
+    <div class="container inner">
+        <h1 class="display-2 text-center">Current Project</h1>
+        <div class="row align-items-center">
+            {% for project in page.current_project %}
+            <div class="space60"></div>
+            <div class="col-lg-12 col-sm-12">
+                <div class="box bg-white shadow">
+                    <div class="space20"></div>
+                    <div class="badge badge-pill bg-hibiscus mr-2" style="font-size:0.8rem;">Project {{forloop.index}}</div>
+        
+                    <div class="space20"></div>
+                    <div class="display-4" style="font-weight: bold;">{{project.title}}</div>
+                    <div class="space20"></div>
+                    <div class="flex-row">
+                        <div class="title-bg bg-default color-dark text-center mr-2" style="font-size:0.8rem; font-weight:bold;">{{project.years}}</div>
+                        <div class="title-bg bg-hibiscus color-dark text-center text-capitalize" style="font-size:0.8rem; font-weight:bold;">{{project.institution}}</div>
+                    </div>
+                    <div class="space40"></div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="past">
+    <div class="wrapper dark-wrapper">
+        <div class="container inner">
+            <h1 class="display-2 text-center" style="color:white;">Past Project</h1>
+            <div class="row align-items-center">
+                {% for project in page.past_project %}
+                <div class="space60"></div>
+                <div class="col-lg-12 col-sm-12">
+                    <div class="box bg-white shadow">
+                        <div class="space20"></div>
+                        <div class="badge badge-pill bg-gray mr-2" style="font-size:0.8rem;">Project {{forloop.index}}</div>
+            
+                        <div class="space20"></div>
+                        <div class="display-4" style="font-weight: bold;">{{project.title}}</div>
+                        <div class="space20"></div>
+                        <div class="flex-row">
+                            <div class="title-bg bg-default color-dark text-center mr-2 mt-2" style="font-size:0.8rem; font-weight:bold;">{{project.years}}</div>
+                            <div class="title-bg bg-hibiscus color-dark text-center text-capitalize mt-2" style="font-size:0.8rem; font-weight:bold;">{{project.institution}}</div>
+                        </div>
+                        <div class="space40"></div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,167 @@
+---
+layout: page
+title: "Patent"
+black_menu: true
+header_style: 'one'
+custom_font: font4
+
+categories:
+    - title: "International"
+      filter: "international"
+    - title: "Domestic"
+      filter: "domestic"
+    - title: "Application"
+      filter: "application"
+    - title: "Granted"
+      filter: "granted"
+    - title: "2022"
+      filter: "2022"
+    - title: "2021"
+      filter: "2021"
+    - title: "2020"
+      filter: "2020"
+    - title: "2019"
+      filter: "2019"
+    - title: "2018"
+      filter: "2018"
+    - title: "2017"
+      filter: "2017"
+    - title: "2016"
+      filter: "2016"
+    - title: "2015"
+      filter: "2015"
+
+international:
+  - title: "Method for transmitting power using metasurface in wireless communication system"
+    inventor: "K. W. Choi, N. M. Tran, M. M. Amri,  D. I. Kim, J. H. Park"
+    authority: "USA"
+    patent_no: "US 2021/0175931 A1"
+    patent_date: "Jun. 10, 2021."
+    filters:
+     - 2021
+     - international
+     - granted
+
+domestic:
+  - title: "무선 네트워크 환경에서 파워 비콘을 이용한 에너지 하비스팅 방법 및 시스템"
+    inventor: "임재원, 마붑 타히라, 최계원, 정민영"
+    authority: "대한민국"
+    patent_no: "10-2296151"
+    patent_date: "2021년 08월 25일"
+    application_no: "10-2019-0177970"
+    application_date: "2019년 12월 30일"
+    filters:
+     - 2021
+     - domestic
+     - granted
+
+  - title: "RIS를 활용한 무선 통신 시스템의 채널 추정 장치 및 이의 방법"
+    inventor: "최계원, 무하마드 미프타훌 암리, 박제현, 웽밍턴"
+    authority: "대한민국"
+    application_no: "10-2021-0192594"
+    application_date: "2021년 12월 30일"
+    filters:
+     - 2021
+     - domestic
+     - application
+---
+
+<div class="wrapper light-wrapper">
+    <div class="container inner">
+        <div class="grid grid-view boxed">
+            <div class="isotope-filter text-center">
+                <ul>
+                    <li><a class="button active" data-filter="*">All</a></li>
+                    {% for category in page.categories %}
+                    <li><a class="button" data-filter=".{{category.filter}}">{{category.title}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div class="space60"></div>
+            <h1 class="display-2 text-center">International</h1>
+            <div class="space40"></div>
+            <div class="tiles">
+                <div class="row isotope light-gallery-wrapper">
+                    {% for item in page.international %}
+                    <div class="item grid-sizer col-md-6 col-lg-12 {% for filter in item.filters %} {{filter}} {% endfor %}">
+                        <div class="box bg-white shadow">
+                            <div class="flex-row">
+                                {% for filter in item.filters %}
+                                <div class="badge badge-pill {% if filter == 'international' %}bg-aqua{% elsif filter=='domestic'%}bg-hibiscus{% elsif filter=='granted'%}bg-orange{% elsif filter=='application'%}bg-yellow{% else %}bg-meander{% endif %} mr-2">
+                                    {{filter}}
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <div class="space20"></div>
+                            <div class="display-4" style="font-weight:bold;">{{item.title}}</div>
+                            <div class="space10"></div>
+                            <div>{{item.inventor}}, <em>{{item.authority}}</em></div>
+                            <div class="space10"></div>
+                            {% if item.patent_no %}
+                            <div><b>Patent No. : </b> {{item.patent_no}}</div>
+                            {% endif %}
+                            {% if item.patent_date %}
+                            <div><b>Patent Date : </b> {{item.patent_date}}</div>
+                            {% endif %}
+                            {% if item.application_no %}
+                            <div><b>Application No. : </b> {{item.application_no}}</div>
+                            {% endif %}
+                            {% if item.application_date %}
+                            <div><b>Application Date : </b> {{item.application_date}}</div>
+                            {% endif %}
+                            {% if item.link %}
+                            <div class="space10"></div>
+                            <a href="{{item.link}}" target="_blank" class="color-red"><i class="icofont-external-link"></i> Link</a>
+                            {% endif %}
+                            <div class="space20"></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="space60"></div>
+            <h1 class="display-2 text-center">Domestic</h1>
+            <div class="space40"></div>
+            <div class="tiles">
+                <div class="row isotope light-gallery-wrapper">
+                    {% for item in page.domestic %}
+                    <div class="item grid-sizer col-md-6 col-lg-12 {% for filter in item.filters %} {{filter}} {% endfor %}">
+                        <div class="box bg-white shadow">
+                            <div class="flex-row">
+                                {% for filter in item.filters %}
+                                <div class="badge badge-pill {% if filter == 'international' %}bg-aqua{% elsif filter=='domestic'%}bg-hibiscus{% elsif filter=='granted'%}bg-orange{% elsif filter=='application'%}bg-yellow{% else %}bg-meander{% endif %} mr-2">
+                                    {{filter}}
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <div class="space20"></div>
+                            <div class="display-4" style="font-weight:bold;">{{item.title}}</div>
+                            <div class="space10"></div>
+                            <div>{{item.inventor}}, <em>{{item.authority}}</em></div>
+                            <div class="space10"></div>
+                            {% if item.patent_no %}
+                            <div><b>등록 번호: </b> {{item.patent_no}}</div>
+                            {% endif %}
+                            {% if item.patent_date %}
+                            <div><b>등록일 : </b> {{item.patent_date}}</div>
+                            {% endif %}
+                            {% if item.application_no %}
+                            <div><b>출원 번호 : </b> {{item.application_no}}</div>
+                            {% endif %}
+                            {% if item.application_date %}
+                            <div><b>출원일 : </b> {{item.application_date}}</div>
+                            {% endif %}
+                            {% if item.link %}
+                            <div class="space10"></div>
+                            <a href="{{item.link}}" target="_blank" class="color-red"><i class="icofont-external-link"></i> Link</a>
+                            {% endif %}
+                            <div class="space20"></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

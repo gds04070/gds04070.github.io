@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Conference"
+black_menu: true
+header_style: 'one'
+custom_font: font4
+
+categories:
+    - title: "International"
+      filter: "international"
+    - title: "Domestic"
+      filter: "domestic"
+    - title: "2022"
+      filter: "2022"
+    - title: "2021"
+      filter: "2021"
+    - title: "2020"
+      filter: "2020"
+    - title: "2019"
+      filter: "2019"
+    - title: "2018"
+      filter: "2018"
+    - title: "2017"
+      filter: "2017"
+    - title: "2016"
+      filter: "2016"
+    - title: "2015"
+      filter: "2015"
+
+conferences:
+  - title: "Beam Scanning Methods for Multi-Antenna Wireless Power Transfer with Reconfigurable Intelligent Surface"
+    author: "N. M. Tran, M. Miftahul Amri, J. H. Park, D. In Kim and K. W. Choi"
+    conference: "2021 IEEE 22nd International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)"
+    details: "Italy, Sept. 2021, pp. 626-630, doi: 10.1109/SPAWC51858.2021.9593106."
+    link: "https://ieeexplore.ieee.org/document/9593106"
+    filters:
+     - 2021
+     - international
+  - title: "Multi-Device Charging RIS-Aided Wireless Power Transfer Systems"
+    author: "N. M. Tran, M. M. Amri, J. H. Park, D. I. Kim and K. W. Choi"
+    conference: " 2021 International Conference on Information and Communication Technology Convergence (ICTC)"
+    details: "Korea, Oct. 2021, pp. 839-844, doi: 10.1109/ICTC52510.2021.9620910."
+    filters:
+     - 2021
+     - international
+  - title: "완전 분산형 User-Centric CF MIMO를 위한 프리코딩 기법"
+    author: "윤현식, 최계원"
+    conference: "한국통신학회 학술대회논문집"
+    details: "2021, 433-434."
+    filters:
+     - 2021
+     - domestic
+---
+
+<div class="wrapper light-wrapper">
+    <div class="container inner">
+        <div class="grid grid-view boxed">
+            <div class="isotope-filter text-center">
+                <ul>
+                    <li><a class="button active" data-filter="*">All</a></li>
+                    {% for category in page.categories %}
+                    <li><a class="button" data-filter=".{{category.filter}}">{{category.title}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div class="space60"></div>
+            <div class="tiles">
+                <div class="row isotope light-gallery-wrapper">
+                    {% for item in page.conferences %}
+                    <div class="item grid-sizer col-md-6 col-lg-12 {% for filter in item.filters %} {{filter}} {% endfor %}">
+                        <div class="box bg-white shadow">
+                            <div class="flex-row">
+                                {% for filter in item.filters %}
+                                <div class="badge badge-pill {% if filter == 'international' %}bg-aqua{% elsif filter=='domestic'%}bg-hibiscus{% else %}bg-meander{% endif %} mr-2">
+                                    {{filter}}
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <div class="space20"></div>
+                            <div class="display-4" style="font-weight:bold;">{{item.title}}</div>
+                            <div class="space10"></div>
+                            <div>{{item.author}}</div>
+                            <div><em>{{item.conference}}</em>, {{item.details}}</div>
+                            {% if item.link %}
+                            <div class="space10"></div>
+                            <a href="{{item.link}}" target="_blank" class="color-red"><i class="icofont-external-link"></i> Link</a>
+                            {% endif %}
+                            <div class="space20"></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="space60"></div>
+        
+        </div>
+    </div>
+</div>
