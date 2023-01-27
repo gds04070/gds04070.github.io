@@ -303,7 +303,7 @@ members_info:
 
 ---
 {% if page.row_num == 1 %}
-{% assign image_ratio_num = 6 %}
+{% assign image_ratio_num = 4 %}
 {% else %}
 {% assign image_ratio_num = 3 %}
 {% endif %}
@@ -319,16 +319,16 @@ members_info:
         <div class="space40"></div>
         <div class="row mt-60">
             {% for member in category.members %}
-            <div class="space60"></div>
+            <div class="space20"></div>
             <div class="{% if page.row_num == 1 %}col-md-12{% else %}col-md-6{% endif %} mb-40">
-                <div class="row">
-                    <div class="col-md-3 col-sm-12 {% if left==false %}order-md-2{% endif %}" {% if left==false %}style="text-align:end;"{% endif %} data-aos="fade-up" data-aos-delay="200">
+                <div class="row" >
+                    <div class="col-md-2 col-sm-12 {% if left==false %}order-md-2{% endif %}" {% if left==false %}style="text-align:end;"{% endif %} data-aos="fade-up" data-aos-delay="200">
                         <figure class="mb-10 {% if page.image_boundary == 'blob' %}img-blob blob1{% else %}rounded{% endif %}">
                             <img src="{{member.image}}" style="width:{{image_ratio_num | times: 2}}rem; height:{{image_ratio_num | times: 3}}rem; object-fit:cover;" alt=""/>
                         </figure>
                     </div>
-                    <div class="col-md-9 col-sm-12 {% if left==false %}order-md-1{% endif %}" {% if left==false %}style="text-align:end;"{% endif %} data-aos="fade-up" data-aos-delay="400">
-                        <h4 class="mb-15 mt-10" style="font-size: 1.6rem">{{member.name}}</h4>
+                    <div class="col-md-8 col-sm-12 {% if left==false %}order-md-1{% endif %}" {% if left==false %}style="text-align:end;"{% endif %} data-aos="fade-up" data-aos-delay="400">
+                        <h4 class="mb-15 mt-10" style="font-size: 1.4rem">{{member.name}}</h4>
                         {% if member.education %}
                         <div class="mb-2" style="font-size: 1rem"><b>Education : </b>
                             <div class="badge badge-pill {% if member.education == 'Ph.D' %}bg-red{% elsif member.education=='Master'%}bg-orange{% elsif member.education=='Undergraduate' %}bg-yellow{% endif %} mr-2">
