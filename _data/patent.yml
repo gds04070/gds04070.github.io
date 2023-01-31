@@ -7,6 +7,8 @@ categories:
       filter: "application"
     - title: "Granted"
       filter: "granted"
+    - title: "2023"
+      filter: "2023"
     - title: "2022"
       filter: "2022"
     - title: "2021"
