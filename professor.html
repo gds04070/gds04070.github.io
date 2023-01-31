@@ -3,6 +3,7 @@ layout: page
 title: "Professor"
 black_menu: true
 header_style: 'one'
+header_image: "/assets/images/art/bg/skku/skku2-2.jpg"
 custom_font: font4
 image: "/assets/images/art/profile/profile_prof_choi.jpg"
 email: "kaewonchoi@skku.edu"
@@ -61,23 +62,24 @@ award:
 
 ---
 
-<div class="wrapper light-wrapper">
+<div class="wrapper gray-wrapper">
     <div class="container inner">
         <div class="row">
-            <div class="col-md-4 col-sm-12 text-center">
+            <div class="col-md-auto col-sm-12 text-center">
                 <figure class="rounded">
                     <img src="{{page.image}}" style="width:12rem; height:18rem; object-fit: cover;" alt=""/>
                 </figure>
             </div>
-            <div class="col-md-8 col-sm-12 mt-40">
+            <div class="col-md-3 col-sm-12 offset-sm-1 mt-40" style="margin-left:120px;">
                 <h1 style="font-size:2rem">Kaewon Choi</h1>
                 <div class="space20"></div>
                 <div class="mb-2" style="font-size:1rem"><i class="icofont-envelope ml-1 mr-2"></i>{{page.email}}</div>
                 <div style="font-size:1rem;"><i class="icofont-phone ml-1 mr-2"></i>{{page.tel}}</div>
             </div>
         </div>
-        <hr />
-        <h2 class="display-2 color-default"><i class="icofont-page mr-2 color-default"></i>Bio</h2>
+        <div class="space60"></div>
+
+       
         <div class="row">
             <div class="col-md-12 mt-20"> 
                 <p style="font-size: 1rem">
@@ -85,372 +87,207 @@ award:
                 </p>
             </div>
         </div>
-        <hr />
-        <!-- 평범 -->
-        <h2 class="display-2 color-default"><i class="icofont-graduate mr-2 color-default"></i>Education</h2>
-        <div class="row">
-          <div class="col-md-12 mt-20">
-            <ul class="icon-list bullet-purple" style="font-size: 1rem">
-              {% for item in page.education %}
-              <li class="mb-4">
-                <i class="jam jam-chevron-right"></i>
-                <b>{{item.years}}:</b>
-                <div class="title-bg bg-hibiscus color-dark text-center ml-1 mr-2" style="font-size:0.8rem;">
-                  {{item.content}}
-                </div>
-                {{item.sub_content}}
-              </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
 
         <div class="space60"></div>
-        
-        <h2 class="display-2 color-default"><i class="icofont-university mr-2 color-default"></i>Professional Experience</h2>
-        <div class="row">
-          <div class="col-md-12 mt-20">
-            <ul class="icon-list bullet-purple" style="font-size: 1rem">
-              {% for item in page.professional_experience %}
-              <li class="mb-4">
-                <div class="row">
-                  <div class="col-md-2 col-sm-12"">
-                    <i class="jam jam-chevron-right"></i>
-                    <b>{{item.years}}:</b>
-                  </div>
-                  <div class="col-md-10 col-sm-12">
-                    <div class="title-bg bg-hibiscus color-dark text-center ml-1 mr-2" style="font-size:0.8rem;">
-                    {{item.content}}
-                    </div>
-                    <p class="ml-2 mt-2">{{item.sub_content}}</p>
-                  </div>
-                </div>
-              </li>
-              <div class="space20"></div>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-
-        <div class="space40"></div>
-
-        <h2 class="display-2 color-default"><i class="icofont-library mr-2 color-default"></i>Academic Activity</h2>
-        <div class="row">
-          <div class="col-md-12 mt-20">
-            <ul class="icon-list bullet-purple" style="font-size: 1rem">
-              {% for item in page.academic_activity %}
-              <li class="mb-4">
-                <div class="row">
-                  <div class="col-md-2 col-sm-12"">
-                    <i class="jam jam-chevron-right"></i>
-                    <b>{{item.years}}:</b>
-                  </div>
-                  <div class="col-md-10 col-sm-12">
-                    <div class="title-bg bg-hibiscus color-dark text-center ml-1 mr-2" style="font-size:0.8rem;">
-                    {{item.content}}
-                    </div>
-                    <p class="ml-2 mt-2">{{item.sub_content}}</p>
-                  </div>
-                </div>
-              </li>
-              <div class="space20"></div>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-
-        <div class="space40"></div>
-        <h2 class="display-2 color-default"><i class="icofont-award mr-2 color-default"></i>Award</h2>
-        <div class="row">
-          <div class="col-md-12 mt-20">
-            <ul class="icon-list bullet-purple" style="font-size: 1rem">
-              {% for item in page.award %}
-              <li class="mb-4">
-                <div class="row">
-                  <div class="col-md-2 col-sm-12"">
-                    <i class="jam jam-chevron-right"></i>
-                    <b>{{item.date}}:</b>
-                  </div>
-                  <div class="col-md-10 col-sm-12">
-                    <div class="title-bg bg-hibiscus color-dark text-center ml-1 mr-2" style="font-size:0.8rem;">
-                    {{item.title}}
-                    </div>
-                    <p class="ml-2 mt-2">{{item.detail}}</p>
-                  </div>
-                </div>
-              </li>
-              <div class="space20"></div>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-        <div class="space40"></div>
-
-        <h2 class="display-2 color-default"><i class="icofont-book mr-2 color-default"></i>Research Interest</h2>
-        <div class="row">
-          <div class="col-md-12 mt-20">
-            <ul class="icon-list bullet-purple" style="font-size: 1rem">
-              {% for item in page.research_interest %}
-              <li class="mb-4">
-                <i class="jam jam-chevron-right"></i>
-                <b>{{item.title}}</b>
-                <ul class="icon-list bullet-rose mt-2" style="font-size: 1rem">
-                  {% for det in item.details %}
-                  <li class="mb-2 ml-2">
-                  <i class="jam jam-arrow-right"></i>
-                  {{det}}
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-
-        <div class="space40"></div>
-
-        <h2 class="display-2 color-default"><i class="icofont-data mr-2 color-default"></i>Research Interest</h2>
-        <div class="row">
-          <div class="col-md-12 mt-20">
-            <div id="accordion-1" class="accordion-wrapper simple">
-              {% for item in page.research_interest %}
-              <div class="card">
-                <div class="card-header" id="according-heading-1-{{forloop.index}}">
-                  <h6>
-                    <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-1-{{forloop.index}}" aria-expanded="false" aria-controls="accordion-collapse-1-{{forloop.index}}">{{item.title}}</button>
-                  </h6>
-                </div>
-                <div id="accordion-collapse-1-{{forloop.index}}" class="collapse" aria-labelledby="accordion-heading-1-{{forloop.index}}" data-target="#accordion-1">
-                  <div class="card-body">
-                    <ul class="icon-list bullet-rose mt-2" style="font-size: 1rem">
-                    {% for det in item.details %}
-                    <li class="mb-2 ml-2">
-                    <i class="jam jam-arrow-right"></i>
-                    {{det}}
-                    </li>
-                    {% endfor %}  
-                  </ul>
-                    
-                  </div>
-                </div>
-              </div>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-        
-        <hr />
         <!-- 접는 거 -->
-        
-    </div>
-</div>
-
-
-
-<div class="wrapper gray-wrapper">
-  <div class="container inner">
-    <div class="row">
-      <div class="col-md-12">
-        <div id="accordion-2" class="accordion-wrapper">
-          <div class="card shadow">
-            <div class="card-header" id="accordion-heading-2-1">
-              <h5>
-                <button class="collapsed" style="font-size:1.2rem" data-toggle="collapse" data-target="#accordion-collapse-2-1" aria-expanded="true" aria-controls="accordion-collapse-2-1"><i class="icofont-graduate mr-1"></i> Education</button>
-              </h5>
-            </div>
-            <!-- /.card-header -->
-            <div id="accordion-collapse-2-1" class="collapse show" aria-labelledby="accordion-heading-2-1" data-target="#accordion-2">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-12 mt-20">
-                    <ul class="icon-list bullet-pink" style="font-size: 1rem">
-                      {% for item in page.education %}
-                      <li class="mb-4">
-                        <div class="row">
-                          <div class="col-md-2 col-sm-12">
-                            <i class="jam jam-circle-f" style="font-size:0.1rem;"></i>
-                            <b class="color-pink">{{item.years}} :</b>
-                          </div>
-                          <div class="col-md-10 col-sm-12">
-                            <div class="title-bg bg-hibiscus color-dark text-center ml-1 mr-2" style="font-size:0.8rem;">
-                              {{item.content}}
-                            </div>
-                            <p class="ml-2 mt-2">{{item.sub_content}}</p>
-                          </div>
-                        </div>
-                      </li>
-                      {% endfor %}
-                    </ul>
-                  </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="accordion-2" class="accordion-wrapper">
+              <div class="card shadow">
+                <div class="card-header" id="accordion-heading-2-1">
+                  <h5>
+                    <button class="collapsed" style="font-size:1.2rem" data-toggle="collapse" data-target="#accordion-collapse-2-1" aria-expanded="true" aria-controls="accordion-collapse-2-1">Education</button>
+                  </h5>
                 </div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.collapse -->
-          </div>
-          <!-- /.card -->
-
-          <div class="card shadow">
-            <div class="card-header" id="accordion-heading-2-2">
-              <h5>
-                <button class="collapsed" style="font-size:1.2rem" data-toggle="collapse" data-target="#accordion-collapse-2-2" aria-expanded="true" aria-controls="accordion-collapse-2-2"><i class="icofont-university mr-2"></i>Professional Experience</button>
-              </h5>
-            </div>
-            <!-- /.card-header -->
-            <div id="accordion-collapse-2-2" class="collapse show" aria-labelledby="accordion-heading-2-2" data-target="#accordion-2">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-12 mt-20">
-                    <ul class="icon-list bullet-pink" style="font-size: 1rem">
-                      {% for item in page.professional_experience %}
-                      <li class="mb-4">
-                        <div class="row">
-                          <div class="col-md-2 col-sm-12">
-                            <i class="jam jam-circle-f" style="font-size:0.1rem"></i>
-                            <b >{{item.years}} :</b>
-                          </div>
-                          <div class="col-md-10 col-sm-12">
-                            <div class="title-bg bg-hibiscus color-dark text-center ml-1 mr-2" style="font-size:0.8rem;">
-                            {{item.content}}
+                <!-- /.card-header -->
+                <div id="accordion-collapse-2-1" class="collapse show" aria-labelledby="accordion-heading-2-1" data-target="#accordion-2">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-12 mt-20">
+                        <ul class="icon-list bullet-pink" style="font-size: 1rem">
+                          {% for item in page.education %}
+                          <li class="mb-4">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-12">
+                                <i class="jam jam-circle-f" style="font-size:0.1rem;"></i>
+                                <b class="color-dark">{{item.years}} :</b>
+                              </div>
+                              <div class="col-md-10 col-sm-12">
+                                <div class="title-bg bg-hibiscus color-dark text-center ml-1 mr-2" style="font-size:0.8rem;">
+                                  {{item.content}}
+                                </div>
+                                <p class="ml-2 mt-2">{{item.sub_content}}</p>
+                              </div>
                             </div>
-                            <p class="ml-2 mt-2">{{item.sub_content}}</p>
-                          </div>
-                        </div>
-                      </li>
-                      <div class="space20"></div>
-                      {% endfor %}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.collapse -->
-          </div>
-          <!-- /.card -->
-
-          <div class="card shadow">
-            <div class="card-header" id="accordion-heading-2-3">
-              <h5>
-                <button class="collapsed" style="font-size:1.2rem" data-toggle="collapse" data-target="#accordion-collapse-2-3" aria-expanded="false" aria-controls="accordion-collapse-2-3">Academic Activity</button>
-              </h5>
-            </div>
-            <!-- /.card-header -->
-            <div id="accordion-collapse-2-3"  class="collapse" aria-labelledby="accordion-heading-2-3" data-target="#accordion-2">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-12 mt-20">
-                    <ul class="icon-list bullet-pink" style="font-size: 1rem">
-                      {% for item in page.academic_activity %}
-                      <li class="mb-4">
-                        <div class="row">
-                          <div class="col-md-2 col-sm-12">
-                            <i class="jam jam-circle-f" style="font-size:0.1rem;"></i>
-                            <b>{{item.years}} :</b>
-                          </div>
-                          <div class="col-md-10 col-sm-12">
-                            <div class="title-bg bg-hibiscus color-dark text-center ml-1 mr-2" style="font-size:0.8rem;">
-                            {{item.content}}
-                            </div>
-                            <p class="ml-2 mt-2">{{item.sub_content}}</p>
-                          </div>
-                        </div>
-                      </li>
-                      <div class="space20"></div>
-                      {% endfor %}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.collapse -->
-          </div>
-          <!-- /.card -->
-
-          <div class="card shadow">
-            <div class="card-header" id="accordion-heading-2-4">
-              <h5>
-                <button class="collapsed" style="font-size:1.2rem" data-toggle="collapse" data-target="#accordion-collapse-2-4" aria-expanded="false" aria-controls="accordion-collapse-2-4">Award</button>
-              </h5>
-            </div>
-            <!-- /.card-header -->
-            <div id="accordion-collapse-2-4" class="collapse" aria-labelledby="accordion-heading-2-4" data-target="#accordion-2">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-12 mt-20">
-                    <ul class="icon-list bullet-pink" style="font-size: 1rem">
-                      {% for item in page.award %}
-                      <li class="mb-4">
-                        <div class="row">
-                          <div class="col-md-2 col-sm-12">
-                            <i class="jam jam-circle-f" style="font-size:0.1rem;"></i>
-                            <b>{{item.date}} :</b>
-                          </div>
-                          <div class="col-md-10 col-sm-12">
-                            <div class="title-bg bg-hibiscus color-dark text-center ml-1 mr-2" style="font-size:0.8rem;">
-                            {{item.title}}
-                            </div>
-                            <p class="ml-2 mt-2">{{item.detail}}</p>
-                          </div>
-                        </div>
-                      </li>
-                      <div class="space20"></div>
-                      {% endfor %}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.collapse -->
-          </div>
-          <!-- /.card -->
-
-          <div class="card shadow">
-            <div class="card-header" id="accordion-heading-2-5">
-              <h5>
-                <button class="collapsed" style="font-size:1.2rem" data-toggle="collapse" data-target="#accordion-collapse-2-5" aria-expanded="false" aria-controls="accordion-collapse-2-5">Research Interest</button>
-              </h5>
-            </div>
-            <!-- /.card-header -->
-            <div id="accordion-collapse-2-5" class="collapse" aria-labelledby="accordion-heading-2-5" data-target="#accordion-2">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-12 mt-20">
-                    <ul class="icon-list bullet-pink" style="font-size: 1rem">
-                      {% for item in page.research_interest %}
-                      <li class="mb-4">
-                        <i class="jam jam-circle-f" style="font-size:0.1rem;"></i>
-                        <b>{{item.title}}</b>
-                        <ul class="icon-list bullet-rose mt-2" style="vertical-align:middle; font-size: 1rem">
-                          {% for det in item.details %}
-                          <li class="mb-2 ml-2">
-                          <i class="jam jam-arrow-right"></i>
-                          {{det}}
                           </li>
                           {% endfor %}
                         </ul>
-                      </li>
-                      {% endfor %}
-                    </ul>
+                      </div>
+                    </div>
                   </div>
+                  <!-- /.card-body -->
                 </div>
+                <!-- /.collapse -->
               </div>
-              <!-- /.card-body -->
+              <!-- /.card -->
+    
+              <div class="card shadow">
+                <div class="card-header" id="accordion-heading-2-2">
+                  <h5>
+                    <button class="collapsed" style="font-size:1.2rem" data-toggle="collapse" data-target="#accordion-collapse-2-2" aria-expanded="true" aria-controls="accordion-collapse-2-2">Professional Experience</button>
+                  </h5>
+                </div>
+                <!-- /.card-header -->
+                <div id="accordion-collapse-2-2" class="collapse show" aria-labelledby="accordion-heading-2-2" data-target="#accordion-2">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-12 mt-20">
+                        <ul class="icon-list bullet-pink" style="font-size: 1rem">
+                          {% for item in page.professional_experience %}
+                          <li class="mb-4">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-12">
+                                <i class="jam jam-circle-f" style="font-size:0.1rem"></i>
+                                <b >{{item.years}} :</b>
+                              </div>
+                              <div class="col-md-10 col-sm-12">
+                                <div class="title-bg bg-hibiscus color-dark text-center ml-1 mr-2" style="font-size:0.8rem;">
+                                {{item.content}}
+                                </div>
+                                <p class="ml-2 mt-2">{{item.sub_content}}</p>
+                              </div>
+                            </div>
+                          </li>
+                          <div class="space20"></div>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.card -->
+    
+              <div class="card shadow">
+                <div class="card-header" id="accordion-heading-2-3">
+                  <h5>
+                    <button class="collapsed" style="font-size:1.2rem" data-toggle="collapse" data-target="#accordion-collapse-2-3" aria-expanded="false" aria-controls="accordion-collapse-2-3">Academic Activity</button>
+                  </h5>
+                </div>
+                <!-- /.card-header -->
+                <div id="accordion-collapse-2-3"  class="collapse show" aria-labelledby="accordion-heading-2-3" data-target="#accordion-2">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-12 mt-20">
+                        <ul class="icon-list bullet-pink" style="font-size: 1rem">
+                          {% for item in page.academic_activity %}
+                          <li class="mb-4">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-12">
+                                <i class="jam jam-circle-f" style="font-size:0.1rem;"></i>
+                                <b>{{item.years}} :</b>
+                              </div>
+                              <div class="col-md-10 col-sm-12">
+                                <div class="title-bg bg-hibiscus color-dark text-center ml-1 mr-2" style="font-size:0.8rem;">
+                                {{item.content}}
+                                </div>
+                                <p class="ml-2 mt-2">{{item.sub_content}}</p>
+                              </div>
+                            </div>
+                          </li>
+                          <div class="space20"></div>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.card -->
+    
+              <div class="card shadow">
+                <div class="card-header" id="accordion-heading-2-4">
+                  <h5>
+                    <button class="collapsed" style="font-size:1.2rem" data-toggle="collapse" data-target="#accordion-collapse-2-4" aria-expanded="false" aria-controls="accordion-collapse-2-4">Award</button>
+                  </h5>
+                </div>
+                <!-- /.card-header -->
+                <div id="accordion-collapse-2-4" class="collapse show" aria-labelledby="accordion-heading-2-4" data-target="#accordion-2">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-12 mt-20">
+                        <ul class="icon-list bullet-pink" style="font-size: 1rem">
+                          {% for item in page.award %}
+                          <li class="mb-4">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-12">
+                                <i class="jam jam-circle-f" style="font-size:0.1rem;"></i>
+                                <b>{{item.date}} :</b>
+                              </div>
+                              <div class="col-md-10 col-sm-12">
+                                <div class="title-bg bg-hibiscus color-dark text-center ml-1 mr-2" style="font-size:0.8rem;">
+                                {{item.title}}
+                                </div>
+                                <p class="ml-2 mt-2">{{item.detail}}</p>
+                              </div>
+                            </div>
+                          </li>
+                          <div class="space20"></div>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.card -->
+    
+              <div class="card shadow">
+                <div class="card-header" id="accordion-heading-2-5">
+                  <h5>
+                    <button class="collapsed" style="font-size:1.2rem" data-toggle="collapse" data-target="#accordion-collapse-2-5" aria-expanded="false" aria-controls="accordion-collapse-2-5">Research Interest</button>
+                  </h5>
+                </div>
+                <!-- /.card-header -->
+                <div id="accordion-collapse-2-5" class="collapse show" aria-labelledby="accordion-heading-2-5" data-target="#accordion-2">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-12 mt-20">
+                        <ul class="icon-list bullet-pink" style="font-size: 1rem">
+                          {% for item in page.research_interest %}
+                          <li class="mb-4">
+                            <i class="jam jam-circle-f" style="font-size:0.1rem;"></i>
+                            <b>{{item.title}}</b>
+                            <ul class="icon-list bullet-rose mt-2" style="vertical-align:middle; font-size: 1rem">
+                              {% for det in item.details %}
+                              <li class="mb-2 ml-2">
+                              <i class="jam jam-arrow-right"></i>
+                              {{det}}
+                              </li>
+                              {% endfor %}
+                            </ul>
+                          </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.card -->
+    
             </div>
-            <!-- /.collapse -->
+            <!-- /.accordion-wrapper -->
           </div>
-          <!-- /.card -->
-
+          <!-- /column -->
         </div>
-        <!-- /.accordion-wrapper -->
-      </div>
-      <!-- /column -->
     </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
 </div>
-<!-- /.wrapper -->

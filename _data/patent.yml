@@ -1,0 +1,341 @@
+categories:
+    - title: "International"
+      filter: "international"
+    - title: "Domestic"
+      filter: "domestic"
+    - title: "Application"
+      filter: "application"
+    - title: "Granted"
+      filter: "granted"
+    - title: "2022"
+      filter: "2022"
+    - title: "2021"
+      filter: "2021"
+    - title: "2020"
+      filter: "2020"
+    - title: "2019"
+      filter: "2019"
+    - title: "2018"
+      filter: "2018"
+    - title: "2017"
+      filter: "2017"
+    - title: "2016"
+      filter: "2016"
+    - title: "2015"
+      filter: "2015"
+
+international:
+  - title: "Method for transmitting power using metasurface in wireless communication system"
+    inventor: "K. W. Choi, N. M. Tran, M. M. Amri,  D. I. Kim, J. H. Park"
+    authority: "USA"
+    patent_no: "US 2021/0175931 A1"
+    patent_date: "Jun. 10, 2021."
+    filters:
+     - 2021
+     - international
+     - granted
+  - title: "Energy transmitting method and apparatus, energy receiving method, and receiving node"
+    inventor: "K. W. Choi and D. I. Kim"
+    authority: "USA"
+    patent_no: "US 10,411,519 B2"
+    patent_date: "Sep. 10, 2019."
+    filters:
+     - 2019
+     - international
+     - granted
+  - title: "Beamforming method for microwave power transmission and apparatus for sending microwaves for power transmission based on beamforming"
+    inventor: "K. W. Choi and D. I. Kim"
+    authority: "USA"
+    patent_no: "US 10,158,258 B2"
+    patent_date: "Dec. 18, 2018."
+    filters:
+     - 2018
+     - international
+     - granted
+
+domestic:
+  - title: "무선 네트워크 환경에서 파워 비콘을 이용한 에너지 하비스팅 방법 및 시스템"
+    inventor: "임재원, 마붑 타히라, 최계원, 정민영"
+    authority: "대한민국"
+    patent_no: "10-2296151"
+    patent_date: "2021년 08월 25일"
+    application_no: "10-2019-0177970"
+    application_date: "2019년 12월 30일"
+    filters:
+     - 2021
+     - domestic
+     - granted
+  - title: "무선 통신 시스템에서 메타평면을 이용한 전력 전송 방법"
+    inventor: "최계원, 웽밍턴, 무하마드 미프타홀 암리, 김동인, 박제현"
+    authority: "대한민국"
+    patent_no: "10-2287068"
+    patent_date: "2021년 08월 02일"
+    application_no: "10-2019-0163992"
+    application_date: "2019년 12월 10일"
+    filters:
+     - 2021
+     - domestic
+     - granted
+  - title: "가시광 통신 및 백스캐터 통신을 이용한 실내 환경에서의 위치 추적 시스템 및 방법"
+    inventor: "안준석, 무갈 대니쉬, 아리프 압둘 아지즈, 최계원, 정민영"
+    authority: "대한민국"
+    patent_no: "10-2281036"
+    patent_date: "2021년 07월 19일"
+    application_no: "10-2020-0076590"
+    application_date: "2020년 06월 23일"
+    filters:
+     - 2021
+     - domestic
+     - granted
+  - title: "무선 기반의 정보 송수신 방법 및 통신 시스템"
+    inventor: "최계원, 아리프 압둘 아지즈, 연규양"
+    authority: "대한민국"
+    patent_no: "10-2253488"
+    patent_date: "2021년 05월 12일"
+    application_no: "10-2020-0004870"
+    application_date: "2020년 01월 14일"
+    filters:
+     - 2021
+     - domestic
+     - granted
+  - title: "무선 기반의 전력 및 정보 동시 송수신 방법 및 그 장치"
+    inventor: "최계원, 강영훈"
+    authority: "대한민국"
+    patent_no: "10-2234177"
+    patent_date: "2021년 03월 25일"
+    application_no: "10-2019-0136152"
+    application_date: "2019년 10월 30일"
+    filters:
+     - 2021
+     - domestic
+     - granted
+  - title: "동시 정보 및 전력 전송을 위한 주파수 선택적 시스템 모델 설계 장치 및 방법"
+    inventor: "최계원, 장현호, 김동인"
+    authority: "대한민국"
+    patent_no: "10-2186427"
+    patent_date: "2020년 11월 27일"
+    application_no: "10-2018-0117079"
+    application_date: "2018년 10월 01일"
+    filters:
+     - 2020
+     - domestic
+     - granted
+  - title: "배열 안테나 기반 위치 추정 방법 및 그 장치"
+    inventor: "최계원, 박제현"
+    authority: "대한민국"
+    patent_no: "10-2161449"
+    patent_date: "2020년 09월 24일"
+    application_no: "10-2018-0148625"
+    application_date: "2018년 11월 17일"
+    filters:
+     - 2020
+     - domestic
+     - granted
+  - title: "무선전력 카메라의 에너지 유지 방법 및 그 시스템"
+    inventor: "최계원, 황사일, 연규양"
+    authority: "대한민국"
+    patent_no: "10-2138932"
+    patent_date: "2020년 07월 22일"
+    application_no: "10-2018-0148624"
+    application_date: "2018년 11월 27일"
+    filters:
+     - 2020
+     - domestic
+     - granted
+  - title: "마이크로파 전력 전송을 위한 방법 및 송신장치와 마이크로파 전력 수신을 위한 방법 및 수신장치"
+    inventor: "최계원, 김동인, 박제현"
+    authority: "대한민국"
+    patent_no: "10-2117330"
+    patent_date: "2020년 05월 26일"
+    application_no: "10-2018-0144499"
+    application_date: "2018년 11월 21일"
+    filters:
+     - 2020
+     - domestic
+     - granted
+  - title: "에너지 전송 방법 및 장치와 에너지 수신 방법 및 수신 노드"
+    inventor: "최계원, 김동인"
+    authority: "대한민국"
+    patent_no: "10-2050999"
+    patent_date: "2019년 11월 26일"
+    application_no: "10-2017-0181285"
+    application_date: "2017년 12월 27일"
+    filters:
+     - 2019
+     - domestic
+     - granted
+  - title: "전력 전송 방법 및 장치"
+    inventor: "최계원, 김동인, 장현호"
+    authority: "대한민국"
+    patent_no: "10-2042844"
+    patent_date: "2019년 11월 04일"
+    application_no: "10-2017-0181287"
+    application_date: "2017년 12월 27일"
+    filters:
+     - 2019
+     - domestic
+     - granted
+  - title: "패킷 전송 방법 및 장치와 패킷 수신 방법 및 장치"
+    inventor: "최계원"
+    authority: "대한민국"
+    patent_no: "10-1935825"
+    patent_date: "2018년 12월 31일"
+    application_no: "10-2017-0105641"
+    application_date: "2017년 08월 21일"
+    filters:
+     - 2018
+     - domestic
+     - granted
+  - title: "마이크로파 전력 전송을 위한 빔포밍 방법 및 빔 포밍으로 전력 전송을 위한 마이크로파를 송신하는 송신장치"
+    inventor: "최계원, 김동인"
+    authority: "대한민국"
+    patent_no: "10-1869224"
+    patent_date: "2018년 06월 13일"
+    application_no: "10-2016-0154859"
+    application_date: "2016년 11월 21일"
+    filters:
+     - 2018
+     - domestic
+     - granted
+  - title: "무선전력전송시스템에서 송신기의 전력 관리 방법 및 무선전력전송시스템에서의 전력 관리 방법"
+    inventor: "최계원, 김동인"
+    authority: "대한민국"
+    patent_no: "10-1863237"
+    patent_date: "2018년 05월 25일"
+    application_no: "10-2016-0154864"
+    application_date: "2016년 11월 21일"
+    filters:
+     - 2018
+     - domestic
+     - granted
+  - title: "VLC 광원의 3차원 좌표 산출 방법 및 장치"
+    inventor: "최계원, 박진원, 이송"
+    authority: "대한민국"
+    patent_no: "10-1798043"
+    patent_date: "2017년 11월 09일"
+    application_no: "10-2017-0068810"
+    application_date: "2017년 06월 02일"
+    filters:
+     - 2017
+     - domestic
+     - granted
+  - title: "VLC-RF 통신 시스템 및 VLC-RF 통신 방법"
+    inventor: "최계원, 박진원, 이송"
+    authority: "대한민국"
+    patent_no: "10-1768147"
+    patent_date: "2017년 08월 08일"
+    application_no: "10-2016-0156068"
+    application_date: "2016년 11월 12일"
+    filters:
+     - 2017
+     - domestic
+     - granted
+
+  - title: "RIS를 활용한 무선 통신 시스템의 채널 추정 장치 및 이의 방법"
+    inventor: "최계원, 무하마드 미프타훌 암리, 박제현, 웽밍턴"
+    authority: "대한민국"
+    application_no: "10-2021-0192594"
+    application_date: "2021년 12월 30일"
+    filters:
+     - 2021
+     - domestic
+     - application
+  - title: "설정 가능 지능형 반사표면을 이용한 무선 전력 전송 시스템 및 방법"
+    inventor: "최계원, 웽밍턴, 박제현, 하명찬"
+    authority: "대한민국"
+    application_no: "10-2021-0172730"
+    application_date: "2021년 12월 26일"
+    filters:
+     - 2021
+     - domestic
+     - application
+  - title: "재구성가능한 지능형 표면의 데이터 전송 방법 및 그 방법이 적용된 재구성가능한 지능형 표면"
+    inventor: "최계원, 아리프 압둘 아지즈, 윤채원"
+    authority: "대한민국"
+    application_no: "10-2021-0187118"
+    application_date: "2021년 12월 24일"
+    filters:
+     - 2021
+     - domestic
+     - application
+  - title: "가변 임피던스를 이용하는 백스캐터 통신 제어 장치 및 이의 방법"
+    inventor: "최계원, 로렌즈 진팅, 천세원"
+    authority: "대한민국"
+    application_no: "10-2021-0187122"
+    application_date: "2021년 12월 24일"
+    filters:
+     - 2021
+     - domestic
+     - application
+  - title: "재설정 가능 지능형 반사표면을 이용한 무선 전력 전송 방법 및 전자장치"
+    inventor: "최계원, 웽밍턴, 박제현, 하명찬"
+    authority: "대한민국"
+    application_no: "10-2021-0185833"
+    application_date: "2021년 12월 23일"
+    filters:
+     - 2021
+     - domestic
+     - application
+  - title: "지능형 반사 표면(RIS: Reconfigurable Intelligent Surface)을 활용한 RF(Radio Frequency) 원거리 무선전력 전송 시스템에서의 최적 전송효율 달성을 위한 수신전력 기반 빔 스캐닝 알고리즘"
+    inventor: "웽밍턴, 무하마드 미프타훌 암리, 최계원, 윤채원, 박제현"
+    authority: "대한민국"
+    application_no: "10-2021-0123867"
+    application_date: "2021년 09월 16일"
+    filters:
+     - 2021
+     - domestic
+     - application
+  - title: "반사형 IRS 연성 기판"
+    inventor: "웽밍턴, 무하마드 미프타훌 암리, 최계원, 김동인, 최주영, 박제현"
+    authority: "대한민국"
+    application_no: "10-2021-0067536"
+    application_date: "2021년 05월 26일"
+    filters:
+     - 2021
+     - domestic
+     - application
+  - title: "오토인코더를 이용한 메타표면 통신시스템"
+    inventor: "최계원, 할디 조나단, 김지수"
+    authority: "대한민국"
+    application_no: "10-2019-0178558"
+    application_date: "2019년 12월 30일"
+    filters:
+     - 2019
+     - domestic
+     - application
+  - title: "효율적인 빔 합성을 위한 최적화 방법 및 장치"
+    inventor: "조동근, 윤현식, 최계원"
+    authority: "대한민국"
+    application_no: "10-2019-0156866"
+    application_date: "2019년 11월 29일"
+    filters:
+     - 2019
+     - domestic
+     - application
+  - title: "무선 전력을 송신하는 방법 및 그 장치"
+    inventor: "최계원, 로렌즈 룰리나 진팅 소에카, 박제현"
+    authority: "대한민국"
+    application_no: "10-2019-0114779"
+    application_date: "2019년 09월 18일"
+    filters:
+     - 2019
+     - domestic
+     - application
+  - title: "RF 무선 전력 수신 방법 및 장치"
+    inventor: "양영구, 배종석, 이강윤, 황금철, 최계원, 김동인"
+    authority: "대한민국"
+    application_no: "10-2018-0017580"
+    application_date: "2018년 02월 13일"
+    filters:
+     - 2018
+     - domestic
+     - application
+  - title: "전력 수신 방법 및 장치"
+    inventor: "양영구, 김민재, 배종석, 구형모, 황금철, 이강윤, 김동인, 정민영, 이태진, 최계원"
+    authority: "대한민국"
+    application_no: "10-2017-0182867"
+    application_date: "2017년 12월 28일"
+    filters:
+     - 2017
+     - domestic
+     - application

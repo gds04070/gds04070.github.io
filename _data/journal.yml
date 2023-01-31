@@ -1,0 +1,47 @@
+categories:
+    - title: "International"
+      filter: "international"
+    - title: "Domestic"
+      filter: "domestic"
+    - title: "2022"
+      filter: "2022"
+    - title: "2021"
+      filter: "2021"
+    - title: "2020"
+      filter: "2020"
+    - title: "2019"
+      filter: "2019"
+    - title: "2018"
+      filter: "2018"
+    - title: "2017"
+      filter: "2017"
+    - title: "2016"
+      filter: "2016"
+    - title: "2015"
+      filter: "2015"
+
+international:
+  - title: "Foundations of Wireless Information and Power Transfer: Theory, Prototypes, and Experiments."
+    author: "Clerckx, B., Kim, J., Choi, K. W., & Kim, D. I."
+    journal: "Proceedings of the IEEE"
+    details: "2022, 110.1: 8-30."
+    link: "https://ieeexplore.ieee.org/document/9675011"
+    filters:
+     - 2022
+     - international
+  - title: "Drone-Based Sensor Information Gathering System with Beam-Rotation Forward-Scattering Communications and Wireless Power Transfer"
+    author: "A. A. Aziz, A. E. Putra, D. I. Kim and K. W. Choi"
+    journal: "IEEE Internet of Things Journal"
+    details: "doi: 10.1109/JIOT.2021.3128532."
+    filters:
+     - 2021
+     - international
+
+domestic:
+  - title: "Cell-Free MIMO 구조에 적합한 분산 CPU-Less Functional Split 구조와 분산 프리코딩 방법"
+    author: "윤현식, 최계원"
+    journal: "한국통신학회논문지"
+    details: "46(12), 2123-2133."
+    filters:
+     - 2021
+     - domestic

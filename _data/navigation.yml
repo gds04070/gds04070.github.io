@@ -2,110 +2,12 @@ main_menu:
 
   - text: "HOME"
     url: "/"
-    menu_type: "megamenu"
-    submenu:
-
-      - text: "Digital Startup"
-        url: "/"
-
-      - text: "Saas Landing"
-        url: "/index-2"
-
-      - text: "SEO Agency"
-        url: "/index-3"
-
-      - text: "Modern Business"
-        url: "/index-4"
-
-      - text: "Design Agency"
-        url: "/index-5"
-
-      - text: "App Presentation"
-        url: "/index-6"
-
-      - text: "Creative Landing"
-        url: "/index-7"
-
-      - text: "Marketing Startup"
-        url: "/index-8"
-
-      - text: "Digital Agency"
-        url: "/index-9"
-
-      - text: "Creative Business"
-        url: "/index-10"
-
-      - text: "Software Landing"
-        url: "/index-11"
-
-      - text: "App Landing"
-        url: "/index-12"
-
-      - text: "Creative Agency"
-        url: "/index-13"
-
-      - text: "Wedding Photography"
-        url: "/index-14"
-
-      - text: "Food Photography"
-        url: "/index-15"
-
-      - text: "Creative Onepage"
-        url: "/index-16"
-
-      - text: "Marketing Company"
-        url: "/index-17"
-
-      - text: "Startup Business"
-        url: "/index-18"
-
-      - text: "Creative Resume"
-        url: "/index-19"
-
-      - text: "Digital Studio"
-        url: "/index-20"
-
-      - text: "Travel Blog"
-        url: "/index-21"
-
-      - text: "Minimal Shop"
-        url: "/index-22"
-
-      - text: "Minimal Portfolio"
-        url: "/index-23"
-
-      - text: "Coming Soon"
-        url: "/index-24"
-
-      - text: "Personal Creative"
-        url: "/index-25"
-
-      - text: "Minimal Photography"
-        url: "/index-26"
-
-      - text: "Maintenance"
-        url: "/index-27"
+    has_menu: false
 
   - text: "PEOPLE"
     url: "/professor"
     menu_type: "dropdown"
     has_submenu: "true"
-    
-    label_two:
-      - sub_menu_text: "tests"
-        sub_menu:
-          - text: "People 1"
-            url: "/people"
-
-          - text: "People 2"
-            url: "/people2"
-
-          - text: "People 3"
-            url: "/people3"
-
-          - text: "People 4"
-            url: "/people4"
- 
     submenu:
       - text: "Prof"
         url: "/professor"
@@ -158,4 +60,5 @@ main_menu:
     has_menu: false
   
   - text: "CONTACT"
+    url: "/contact"
     has_menu: false

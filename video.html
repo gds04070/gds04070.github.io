@@ -4,41 +4,7 @@ title: "Testbed Video"
 black_menu: true
 header_style: 'one'
 custom_font: font4
-categories:
- - title: "Conference"
-   filter: "conference"
- - title: "2019"
-   filter: "2019"
- - title: "2020"
-   filter: "2020"
- - title: "2021"
-   filter: "2021"
-research_video:
-  - title: "Metasurface aided WPT Testbed"
-    videos:
-     - link: "Ls53PUzJDsA"
-       sub_title: "Multi Antenna Long Range Wireless Power Transfer System
-       with Reconfigurable Metasurface Reflector"
-    filters:
-     - 2019
-     - conference
-  - title: "Metasurface Testbed"
-    videos:
-     - link: "bqNJ8--wzLE"
-    filters:
-     - 2020
-  - title: "Wireless Powered Sensor Network (WPSN) Testbed"
-    thumbnails:
-     - img: "/assets/images/art/video/video_wireless_powered_sensor_network.jpg"
-    content: "In this experiment, a multi-antenna power beacon wirelessly transfers power to sensor nodes via the microwave power transfer (a.k.a., RF power transfer) technique."
-    videos:
-     - link: "qP9fZQX1sDk"
-       sub_title: "Indoor Short-Range Test"
-       sub_content: "asdfbasdfgasdasfasdfasgasgasgddsgsgsaasdfadfdasfasfsfafssdfdsfsf"
-     - link: "9LpE1_1xOyQ"
-       sub_title: "Outdoor Long-Range Test"
-    filters:
-     - 2021
+header_image: "/assets/images/art/bg/skku/skku2-2.jpg"
 ---
 
 <div class="wrapper light-wrapper">
@@ -47,7 +13,7 @@ research_video:
             <div class="isotope-filter text-center">
                 <ul>
                     <li><a class="button active" data-filter="*">All</a></li>
-                    {% for category in page.categories %}
+                    {% for category in site.data.video.categories %}
                     <li><a class="button" data-filter=".{{category.filter}}">{{category.title}}</a></li>
                     {% endfor %}
                 </ul>
@@ -55,7 +21,7 @@ research_video:
             <div class="clearfix"></div>
             <div class="tiles">
                 <div class="row isotope light-gallery-wrapper">
-                {% for item in page.research_video %}
+                {% for item in site.data.video.research_video %}
                 <div class="item grid-sizer col-md-6 col-lg-12 {% for filter in item.filters %} {{filter}} {% endfor %}">
                     <div class="box bg-white shadow">
                         <h1 class="display-2 text-center">
