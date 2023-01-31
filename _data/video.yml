@@ -1,26 +1,75 @@
 categories:
  - title: "Conference"
    filter: "conference"
+ - title: "2018"
+   filter: "2018"
  - title: "2019"
    filter: "2019"
  - title: "2020"
    filter: "2020"
  - title: "2021"
    filter: "2021"
+ - title: "2022"
+   filter: "2022"
 research_video:
+  - title: "A Study on 3D Human Pose Estimation Using Through-Wall IR-UWB Radar and Transformer"
+    videos:
+     - link: "Duhg8TNhJP8"
+    filters:
+     - 2022
+  - title: "Reconfigurable Intelligent Surface-Assisted Simultaneous Wireless Information and Power Transfer"
+    videos:
+     - link: "FKT3H6nLqf8"
+    filters:
+     - 2022
+  - title: "RIS-aided Wireless Communications Adaptive Beamforming and Experimental Validations"
+    videos:
+     - link: "YWRr5JTlkjQ"
+    filters:
+     - 2021
+  - title: "Cell-free multiple-input multiple-out (CF MIMO) technique"
+    videos:
+     - link: "sUgWlkwGL8Q"
+    filters:
+     - 2021
   - title: "Metasurface aided WPT Testbed"
     videos:
      - link: "Ls53PUzJDsA"
        sub_title: "Multi Antenna Long Range Wireless Power Transfer System
        with Reconfigurable Metasurface Reflector"
     filters:
-     - 2019
+     - 2020
      - conference
   - title: "Metasurface Testbed"
     videos:
-     - link: "bqNJ8--wzLE"
+     - link: "P9TmYrqZB5s"
+       sub_title: "This video demonstrates the reconfigurable metasurface-aided wireless communications experiments"
     filters:
      - 2020
+  - title: "Simultaneous Wireless Information and Power Transfer (SWIPT) Experiment"
+    videos:
+     - link: "kWh8MSAtQxU"
+       sub_title: "This video shows the experiments of simultaneous wireless information and power transfer (SWIPT) technologies."
+    filters:
+     - 2019
+  - title: "Ultra-Dense Network (UDN) with multi-user multiple-input multiple-output (MU-MIMO) technique"
+    videos:
+     - link: "Il8yJdM-9hc"
+       sub_title: "This video shows the software defined radio (SDR) implementation of the ultra-dense networks (UDN)."
+    filters:
+     - 2019
+  - title: "Wireless-Powered Sensor Device Survivability Test (Long-Range Wireless Power Transfer)"
+    videos:
+     - link: "ojxk3Nt4xlo"
+       sub_title: "This video shows RF-based wireless power transfer successfully supply power to a sensor device located 50 meters away to keep the sensor device alive over 20 minutes."
+    filters:
+     - 2018
+  - title: "RF Wireless Power Transfer-Based Battery-Less Location Tracking System"
+    videos:
+     - link: "zo4Pv6MqmcY"
+       sub_title: "In this test, we show the three-dimensional indoor positioning of a wireless-powered sensor device by using a single antenna array."
+    filters:
+     - 2018     
   - title: "Wireless Powered Sensor Network (WPSN) Testbed"
     thumbnails:
      - img: "/assets/images/art/video/video_wireless_powered_sensor_network.jpg"
@@ -28,8 +77,8 @@ research_video:
     videos:
      - link: "qP9fZQX1sDk"
        sub_title: "Indoor Short-Range Test"
-       sub_content: "asdfbasdfgasdasfasdfasgasgasgddsgsgsaasdfadfdasfasfsfafssdfdsfsf"
+       sub_content: "This video shows the wireless-powered sensor network (WPSN) testbed in which a multi-antenna power beacon wirelessly transfers power to sensor nodes via the microwave power transfer (a.k.a., RF power transfer) technique"
      - link: "9LpE1_1xOyQ"
        sub_title: "Outdoor Long-Range Test"
     filters:
-     - 2021
+     - 2018
